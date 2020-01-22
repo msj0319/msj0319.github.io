@@ -166,7 +166,12 @@
             
         </h1>
         <div class="content">
-            <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span> x, y;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">// x좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            x = v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//y좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] == v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            y = v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;x,y&#125;;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**XOR 연산자 사용하여 문제해결**&lt;/br&gt;</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;<span class="hljs-number">0</span>,<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//좌표는 총 3개가 입력으로 주어지므로 반복을 3번 돌린다.</span></span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-number">3</span>; i++)&#123;</span><br><span class="line">            answer[<span class="hljs-number">0</span>] ^= v[i][<span class="hljs-number">0</span>];</span><br><span class="line">            answer[<span class="hljs-number">1</span>] ^= v[i][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span> x, y;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">// x좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            x = v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//y좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] == v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            y = v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;x,y&#125;;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>XOR 연산자 사용하여 문제해결</strong><br></p>
+<figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;<span class="hljs-number">0</span>,<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//좌표는 총 3개가 입력으로 주어지므로 반복을 3번 돌린다.</span></span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-number">3</span>; i++)&#123;</span><br><span class="line">            answer[<span class="hljs-number">0</span>] ^= v[i][<span class="hljs-number">0</span>];</span><br><span class="line">            answer[<span class="hljs-number">1</span>] ^= v[i][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -313,7 +318,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Articles
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
@@ -325,7 +330,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        Catégories
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -350,7 +355,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/msj0319" target="_blank" rel="external nofollow noopener noreferrer">
-                Follow</a>
+                SUIVRE</a>
         </div>
         
         
@@ -392,7 +397,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            Liens
         </h3>
         <ul class="menu-list">
         
@@ -429,7 +434,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                Catégories
             </h3>
             <ul class="menu-list">
             <li>
@@ -465,7 +470,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Tag Cloud
+            Nuage de tags
         </h3>
         <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" style="font-size: 10px;">문제해결</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 15px;">알고리즘</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 15px;">프로그래머스</a>
     </div>
@@ -477,7 +482,7 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Récents
         </h3>
         
         <article class="media">
@@ -638,7 +643,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            Récents
         </h3>
         
         <article class="media">
@@ -914,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;" target="_blank" rel="noopener">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -950,9 +955,9 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
+                POSTS: 'Articles',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
+                CATEGORIES: 'Catégories',
                 TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
