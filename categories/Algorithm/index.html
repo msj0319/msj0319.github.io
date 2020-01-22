@@ -144,6 +144,51 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-01-22T13:41:44.000Z">2020-01-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 114 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/01/22/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%82%98%EB%A8%B8%EC%A7%80-%ED%95%9C-%EC%A0%90/">[프로그래머스] 나머지 한 점</a>
+            
+        </h1>
+        <div class="content">
+            <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span> x, y;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">// x좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            x = v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//y좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] == v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            y = v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;x,y&#125;;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&lt;/br&gt;</span><br><span class="line"></span><br><span class="line">**XOR 연산자 사용하여 문제해결**&lt;/br&gt;</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;<span class="hljs-number">0</span>,<span class="hljs-number">0</span>&#125;;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//좌표는 총 3개가 입력으로 주어지므로 반복을 3번 돌린다.</span></span><br><span class="line">        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;<span class="hljs-number">3</span>; i++)&#123;</span><br><span class="line">            answer[<span class="hljs-number">0</span>] ^= v[i][<span class="hljs-number">0</span>];</span><br><span class="line">            answer[<span class="hljs-number">1</span>] ^= v[i][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-01-22T13:27:20.000Z">2020-01-22</time>
                 
                 <div class="level-item">
@@ -451,7 +496,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">4</span>
             </span>
         </a><ul><li>
         <a class="level is-marginless" href="/categories/Algorithm/Programmers/">
@@ -459,7 +504,7 @@
                 <span class="level-item">Programmers</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">3</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/Algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0-%EC%A0%84%EB%9E%B5/">
@@ -506,7 +551,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-22T13:41:44.000Z">2020-01-22</time></div>
                     <a href="/2020/01/22/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%82%98%EB%A8%B8%EC%A7%80-%ED%95%9C-%EC%A0%90/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[프로그래머스] 나머지 한 점</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>
                     </p>
                 </div>
             </div>
@@ -607,7 +652,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Algorithm/">
                         <span class="tag">Algorithm</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -621,14 +666,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">
                         <span class="tag">알고리즘</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">
                         <span class="tag">프로그래머스</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -667,7 +712,7 @@
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-22T13:41:44.000Z">2020-01-22</time></div>
                     <a href="/2020/01/22/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%82%98%EB%A8%B8%EC%A7%80-%ED%95%9C-%EC%A0%90/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[프로그래머스] 나머지 한 점</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>
                     </p>
                 </div>
             </div>
@@ -768,7 +813,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Algorithm/">
                         <span class="tag">Algorithm</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
@@ -782,14 +827,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/">
                         <span class="tag">알고리즘</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/">
                         <span class="tag">프로그래머스</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
