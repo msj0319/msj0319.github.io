@@ -19,7 +19,7 @@
 <meta property="og:description" content="직사각형을 만드는데 필요한 4개의 점 중 3개만 주어질 때, 주어지는 3개의 점들은 모두 각 x축 y축에 평행 하도록 하는 좌표만 주므로, 만약 [[1,4],[3,4],[3,10]] 이 주어졌을 때 중복 되는 배열의 원소 수는 소거한다. 그럼 중복 되지 않는 수가 나머지 한 점 이 된다.그러므로 [1,10] 이 output으로 나와야 한다. 주어진 2차원">
 <meta property="og:locale" content="kr">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;og_image.png">
-<meta property="og:updated_time" content="2020-01-22T14:33:20.581Z">
+<meta property="og:updated_time" content="2020-01-22T14:49:50.668Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;og_image.png">
 
@@ -146,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 251 words)
+                    2 minutes read (About 252 words)
                 </span>
                 
                 
@@ -161,11 +161,8 @@
         <div class="content">
             <p>직사각형을 만드는데 필요한 4개의 점 중 3개만 주어질 때, 주어지는 3개의 점들은 모두 각 x축 y축에 평행 하도록 하는 좌표만 주므로, 만약 <code>[[1,4],[3,4],[3,10]]</code> 이 주어졌을 때 중복 되는 배열의 원소 수는 소거한다. 그럼 중복 되지 않는 수가 <strong>나머지 한 점</strong> 이 된다.<br><br>그러므로 <code>[1,10]</code> 이 output으로 나와야 한다. <br><br>주어진 2차원 배열을 비정방형 행렬로 생각하여 풀어보자.<br></p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">                     x좌표    y좌표</span><br><span class="line">v = [[<span class="hljs-number">1</span>, <span class="hljs-number">4</span>]         [<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]   [<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]</span><br><span class="line">     [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>]    ==   [<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]   [<span class="hljs-number">1</span>][<span class="hljs-number">1</span>]</span><br><span class="line">     [<span class="hljs-number">3</span>,<span class="hljs-number">10</span>]]        [<span class="hljs-number">2</span>][<span class="hljs-number">0</span>]   [<span class="hljs-number">2</span>][<span class="hljs-number">1</span>]</span><br></pre></td></tr></table></figure>
-
 <br>
-
-
-
+<a id="more"></a>
 <br>
 
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] solution(<span class="hljs-keyword">int</span>[][] v) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span> x, y;</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">// x좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">0</span>])&#123;</span><br><span class="line">            x = v[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            x = v[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-comment">//y좌표값 찾기</span></span><br><span class="line">        <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>] == v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>]==v[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>])&#123;</span><br><span class="line">            y = v[<span class="hljs-number">1</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            y = v[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>];</span><br><span class="line">        </span><br><span class="line">        <span class="hljs-keyword">int</span>[] answer = &#123;x,y&#125;;</span><br><span class="line">        <span class="hljs-keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -284,7 +281,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Articles
+                        Posts
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
@@ -296,7 +293,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Catégories
+                        Categories
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -321,7 +318,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/msj0319" target="_blank" rel="external nofollow noopener noreferrer">
-                SUIVRE</a>
+                Follow</a>
         </div>
         
         
@@ -363,7 +360,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Liens
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -400,7 +397,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Catégories
+                Categories
             </h3>
             <ul class="menu-list">
             <li>
@@ -436,7 +433,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nuage de tags
+            Tag Cloud
         </h3>
         <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" style="font-size: 10px;">문제해결</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 15px;">알고리즘</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 15px;">프로그래머스</a>
     </div>
@@ -448,7 +445,7 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Récents
+            Recent
         </h3>
         
         <article class="media">
@@ -609,7 +606,7 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Récents
+            Recent
         </h3>
         
         <article class="media">
@@ -921,9 +918,9 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Articles',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Catégories',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
