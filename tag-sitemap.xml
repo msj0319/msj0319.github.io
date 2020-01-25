@@ -3,29 +3,29 @@
 
 
     <url>
-        <loc>https://msj0319.github.io/tags/%25EB%25AC%25B8%25EC%25A0%259C%25ED%2595%25B4%25EA%25B2%25B0/</loc>
-        <lastmod>2020-01-22T14:53:51.568Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://msj0319.github.io/tags/Algorithm/</loc>
-        <lastmod>2020-01-22T14:53:51.568Z</lastmod>
+        <lastmod>2020-01-25T12:42:25.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://msj0319.github.io/tags/%25EC%2595%258C%25EA%25B3%25A0%25EB%25A6%25AC%25EC%25A6%2598/</loc>
-        <lastmod>2020-01-22T14:52:36.048Z</lastmod>
+        <lastmod>2020-01-25T12:42:25.765Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://msj0319.github.io/tags/%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4/</loc>
-        <lastmod>2020-01-22T14:52:36.048Z</lastmod>
+        <lastmod>2020-01-25T12:42:25.765Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/tags/%25EB%25AC%25B8%25EC%25A0%259C%25ED%2595%25B4%25EA%25B2%25B0/</loc>
+        <lastmod>2020-01-22T14:53:51.568Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
