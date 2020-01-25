@@ -19,7 +19,7 @@
 <meta property="og:description" content="서울에서 김서방 찾기… 금방 풀었다라고 생각했고 테스트 통과까지 했다.하지만 정확성 테스트에서 털려버렸고 이유는 질문하기에서 금방 찾을 수 있었다.">
 <meta property="og:locale" content="kr">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
-<meta property="og:updated_time" content="2020-01-25T19:08:48.856Z">
+<meta property="og:updated_time" content="2020-01-25T19:15:15.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
 
@@ -173,8 +173,8 @@
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//오답 코드 (정확성 테스트 실패)</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">solution</span><span class="hljs-params">(String[] seoul)</span> </span>&#123;</span><br><span class="line">      String answer = <span class="hljs-string">""</span>;</span><br><span class="line">      <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;</span><br><span class="line">      <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i&lt;seoul.length; i++)&#123;</span><br><span class="line">          <span class="hljs-keyword">if</span> (seoul[i] == <span class="hljs-string">"Kim"</span>)&#123; <span class="hljs-comment">//문제의 그 부분</span></span><br><span class="line">              <span class="hljs-keyword">break</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        answer = <span class="hljs-string">"김서방은 "</span>+i+<span class="hljs-string">"에 있다"</span>;</span><br><span class="line">      &#125;</span><br><span class="line">     </span><br><span class="line">      <span class="hljs-keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br>
 자바에서 String을 비교할 때,<br>
-.equals() 는 객체끼리 내용(값)을 비교할 수 있는 메소드이고(값 자체를 비교),<br>
-== 는 객체의 참조(주소)값을 비교하는 연산자 이다.<br>
+<code>.equals()</code> 는 객체끼리 내용(값)을 비교할 수 있는 메소드이고(값 자체를 비교),<br>
+<code>==</code> 는 객체의 참조(주소)값을 비교하는 연산자이다.<br>
 
 <p>무심코 생각못하고 실전에서 이런 실수를 해버렸다면 정말 끔찍했을 것이다.<br><br></p>
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//솔루션</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">solution</span><span class="hljs-params">(String[] seoul)</span> </span>&#123;</span><br><span class="line">      String answer = <span class="hljs-string">""</span>;</span><br><span class="line">      String kim = <span class="hljs-string">"Kim"</span>;</span><br><span class="line">      <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;</span><br><span class="line">      <span class="hljs-keyword">for</span> (i=<span class="hljs-number">0</span>; i&lt;seoul.length; i++)&#123;</span><br><span class="line">          <span class="hljs-keyword">if</span> (seoul[i].equals(kim))&#123;</span><br><span class="line">             answer = <span class="hljs-string">"김서방은 "</span>+i+<span class="hljs-string">"에 있다"</span>; <span class="hljs-comment">//띄어쓰기 주의</span></span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="hljs-keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;" target="_blank" rel="noopener">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
