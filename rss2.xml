@@ -9,8 +9,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 27 Jan 2020 17:04:10 GMT</pubDate>
+    <pubDate>Mon, 27 Jan 2020 17:59:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Hexo Blog] Markdown 플러그인 설치</title>
+      <link>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/</link>
+      <guid>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid>
+      <pubDate>Mon, 27 Jan 2020 17:41:47 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;언제부턴가 간단한 인라인 코드를 작성할 때&lt;/p&gt;
+&lt;figure class=&quot;highlight plain hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] K번째 수</title>
