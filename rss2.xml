@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 27 Jan 2020 17:59:37 GMT</pubDate>
+    <pubDate>Mon, 27 Jan 2020 18:06:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -21,8 +21,8 @@
       
         
         
-          &lt;p&gt;언제부턴가 간단한 인라인 코드를 작성할 때&lt;/p&gt;
-&lt;figure class=&quot;highlight plain hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;
+          &lt;p&gt;마크다운은 간단한 인라인 코드를 작성할 때 백틱을 이용한다.&lt;/p&gt;
+&lt;figure class=&quot;highlight markdown hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/sp
         
       
       </description>

@@ -154,7 +154,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1분 읽기 (대략 224 단어)
+                    2분 읽기 (대략 249 단어)
                 </span>
                 
                 
@@ -167,11 +167,11 @@
             
         </h1>
         <div class="content">
-            <p>언제부턴가 간단한 인라인 코드를 작성할 때</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`(넣을 내용)`</span><br></pre></td></tr></table></figure>
-<p>어떤 md 파일은 됐는데 새로 작성하는 파일에선 먹히지 않는 현상을 발견했다. <br><br><br>구글링을 통해 삽질을 해본 결과 기본 hexo는 원래 해당 태그를 지원하지 않는다는 사실을 어느 블로그를 통해 알게 되었고 당장 hexo 용 마크다운 플러그인을 설치했다.<br><br></p>
+            <p>마크다운은 간단한 인라인 코드를 작성할 때 백틱을 이용한다.</p>
+<figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-code">`(넣을 내용)`</span></span><br></pre></td></tr></table></figure>
+<p>근데 잘 쓰고 있던 중 어떤 md 파일은 먹히는데 새로 작성하는 파일에선 되지 않는 현상을 발견했다. <br><br><br>구글링을 통해 삽질을 해본 결과 기본 hexo는 원래 해당 태그를 지원하지 않는다는 사실을 어느 블로그를 통해 알게 되었고 당장 hexo 용 마크다운 플러그인을 설치했다.<br><br></p>
 <p>참조 : <a href="https://d2fault.github.io/2018/07/03/20180703-smart-posting/" target="_blank" rel="external nofollow noopener noreferrer">https://d2fault.github.io/2018/07/03/20180703-smart-posting/</a> <br><br></p>
-<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><p>hexo가 설치 된 루트 폴더 (블로그 theme 상단 경로)에 아래 npm 명령을 입력한다. </p>
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><p><a href="https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus" target="_blank" rel="external nofollow noopener noreferrer">https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus</a><br><br>hexo가 설치 된 루트 폴더 (블로그 theme 상단 경로)에 아래 npm 명령을 입력한다. </p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-renderer-marked --save</span><br><span class="line">npm i hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
 
 <h2 id="config-yml-설정"><a href="#config-yml-설정" class="headerlink" title="_config.yml 설정"></a>_config.yml 설정</h2><figure class="highlight yml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#Markdown 플러그인 설치</span></span><br><span class="line"><span class="hljs-attr">markdown_it_plus:</span></span><br><span class="line">    <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span></span><br><span class="line">    <span class="hljs-attr">html:</span> <span class="hljs-literal">true</span></span><br><span class="line">    <span class="hljs-attr">xhtmlOut:</span> <span class="hljs-literal">true</span></span><br><span class="line">    <span class="hljs-attr">breaks:</span> <span class="hljs-literal">true</span></span><br><span class="line">    <span class="hljs-attr">langPrefix:</span></span><br><span class="line">    <span class="hljs-attr">linkify:</span> <span class="hljs-literal">true</span></span><br><span class="line">    <span class="hljs-attr">typographer:</span></span><br><span class="line">    <span class="hljs-attr">quotes:</span> <span class="hljs-string">“”‘’</span></span><br><span class="line">    <span class="hljs-attr">pre_class:</span> <span class="hljs-string">highlight</span></span><br></pre></td></tr></table></figure>
