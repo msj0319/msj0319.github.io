@@ -36,7 +36,7 @@
       <pubDate>Mon, 27 Jan 2020 14:58:42 GMT</pubDate>
       <description>
       
-        &lt;p&gt;배열 &lt;code&gt;array&lt;/code&gt;를 i번째 부터 j번째 까지 자르고 정렬했을 때, k번째에 있는 수를 구한다. &lt;br&gt;&lt;br&gt; &lt;code&gt;commands&lt;/code&gt; 배열의 각 행, 즉 &lt;code&gt;i,j,k&lt;/code&gt;를 잘 뽑아내고 정렬 후 k번째 수를 &lt;code&gt;answer&lt;/code&gt; 배열에 넣기만 하면 된다&lt;/p&gt;
+        &lt;p&gt;배열 &lt;code&gt;array&lt;/code&gt;를 i번째 부터 j번째 까지 자르고 정렬했을 때, k번째에 있는 수를 구한다. &lt;br&gt;&lt;br&gt; &lt;code&gt;commands&lt;/code&gt; 배열의 각 행, 즉 &lt;code&gt;i,j,k&lt;/code&gt;를 잘 뽑아내고 정렬 후 k번째 수를 &lt;code&gt;answer&lt;/code&gt; 배열에 넣기만 하면 된다.&lt;/p&gt;
       
       </description>
       
