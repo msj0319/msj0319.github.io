@@ -9,8 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 06 Feb 2020 15:49:42 GMT</pubDate>
+    <pubDate>Thu, 06 Feb 2020 17:56:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] x만큼 간격이 있는 n개의 숫자</title>
+      <link>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/</link>
+      <guid>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/</guid>
+      <pubDate>Thu, 06 Feb 2020 17:40:42 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;문제 자체는 쉬웠지만 자칫 그냥 써버릴 수 있는 int 타입이 입력 변수 범위가 제한조건에 걸려 테스트케이스에서 실패를 했었던 문제다. &lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] 문자열 다루기 기본</title>
