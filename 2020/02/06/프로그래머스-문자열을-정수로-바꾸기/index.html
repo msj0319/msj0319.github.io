@@ -11,7 +11,7 @@
 
 
     <meta name="description" content="문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호(+,-)가 올 수 있다고 한다.부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.">
-<meta name="keywords" content="프로그래머스,알고리즘,Algorithm,parse,valueOf">
+<meta name="keywords" content="프로그래머스,알고리즘,Algorithm,parse">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[프로그래머스] 문자열을 정수로 바꾸기">
 <meta property="og:url" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;2020&#x2F;02&#x2F;06&#x2F;%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EC%A0%95%EC%88%98%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0&#x2F;index.html">
@@ -19,7 +19,7 @@
 <meta property="og:description" content="문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호(+,-)가 올 수 있다고 한다.부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
-<meta property="og:updated_time" content="2020-02-06T10:11:36.233Z">
+<meta property="og:updated_time" content="2020-02-06T10:45:27.483Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
 
@@ -165,7 +165,7 @@
             
         </h1>
         <div class="content">
-            <p>문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호(+,-)가 올 수 있다고 한다.<br><br>부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.</p>
+            <p>문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호<code>(+,-)</code>가 올 수 있다고 한다.<br><br>부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.</p>
 <a id="more"></a> 
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> java.util.*;</span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">solution</span><span class="hljs-params">(String s)</span> </span>&#123;</span><br><span class="line">      <span class="hljs-keyword">int</span> answer = <span class="hljs-number">0</span>;</span><br><span class="line">      answer = Integer.parseInt(s);</span><br><span class="line">      </span><br><span class="line">      <span class="hljs-keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>우선 이렇게 코딩 후 실행하니 테스트케이스는 전부 통과했고, 놀랍게도 정답으로 통과했다.<br><br>그리고 남들이 푼 코드를 보니 API에 의존한 내가 너무 부끄럽게 느껴졌다.</p>
@@ -185,7 +185,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/Algorithm/" rel="tag">Algorithm</a>, <a class="has-link-grey -link" href="/tags/parse/" rel="tag">parse</a>, <a class="has-link-grey -link" href="/tags/valueOf/" rel="tag">valueOf</a>, <a class="has-link-grey -link" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">알고리즘</a>, <a class="has-link-grey -link" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" rel="tag">프로그래머스</a>
+                    <a class="has-link-grey -link" href="/tags/Algorithm/" rel="tag">Algorithm</a>, <a class="has-link-grey -link" href="/tags/parse/" rel="tag">parse</a>, <a class="has-link-grey -link" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" rel="tag">알고리즘</a>, <a class="has-link-grey -link" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" rel="tag">프로그래머스</a>
                 </div>
             </div>
         </div>
@@ -283,7 +283,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            14
+                            13
                         </p>
                     </a>
                 </div>
@@ -442,7 +442,7 @@
         <h3 class="menu-label">
             태그 클라우드
         </h3>
-        <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/copyOfRange/" style="font-size: 10px;">copyOfRange()</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/parse/" style="font-size: 10px;">parse</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/valueOf/" style="font-size: 10px;">valueOf</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 20px;">알고리즘</a> <a href="/tags/%EC%A0%95%EB%A0%AC/" style="font-size: 10px;">정렬</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 20px;">프로그래머스</a>
+        <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/copyOfRange/" style="font-size: 10px;">copyOfRange()</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/parse/" style="font-size: 10px;">parse</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 20px;">알고리즘</a> <a href="/tags/%EC%A0%95%EB%A0%AC/" style="font-size: 10px;">정렬</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 20px;">프로그래머스</a>
     </div>
 </div>
     
@@ -662,13 +662,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/sort/">
                         <span class="tag">sort</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/valueOf/">
-                        <span class="tag">valueOf</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -923,13 +916,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/sort/">
                         <span class="tag">sort</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/valueOf/">
-                        <span class="tag">valueOf</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

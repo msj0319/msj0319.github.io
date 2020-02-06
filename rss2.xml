@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 06 Feb 2020 10:11:36 GMT</pubDate>
+    <pubDate>Thu, 06 Feb 2020 10:45:27 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -19,7 +19,7 @@
       <pubDate>Thu, 06 Feb 2020 08:29:30 GMT</pubDate>
       <description>
       
-        &lt;p&gt;문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호(+,-)가 올 수 있다고 한다.&lt;br&gt;&lt;br&gt;부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.&lt;/p&gt;
+        &lt;p&gt;문자열의 길이는(s는) 1~5이고, s 맨 앞에는 부호&lt;code&gt;(+,-)&lt;/code&gt;가 올 수 있다고 한다.&lt;br&gt;&lt;br&gt;부호에 따른 처리가 필요한 것인지 궁금했지만 일단 매개변수로 받은 문자열 s를 정수로 casting 해보았다.&lt;/p&gt;
       
       </description>
       
