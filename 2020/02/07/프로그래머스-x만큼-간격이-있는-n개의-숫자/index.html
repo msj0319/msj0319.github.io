@@ -19,7 +19,7 @@
 <meta property="og:description" content="문제 자체는 쉬웠지만 자칫 그냥 써버릴 수 있는 int 타입이 입력 변수 범위가 제한조건에 걸려 테스트케이스에서 실패를 했었던 문제다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
-<meta property="og:updated_time" content="2020-02-06T17:56:27.420Z">
+<meta property="og:updated_time" content="2020-02-10T09:28:34.546Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;img-programmers.png">
 
@@ -169,7 +169,7 @@
 <a id="more"></a>
 
 <figure class="highlight java hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span>[] solution(<span class="hljs-keyword">long</span> x, <span class="hljs-keyword">int</span> n) &#123;</span><br><span class="line">      <span class="hljs-keyword">long</span>[] answer = <span class="hljs-keyword">new</span> <span class="hljs-keyword">long</span>[n];</span><br><span class="line">     </span><br><span class="line">      <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;n; i++)&#123;</span><br><span class="line">          answer[i] = x*(i+<span class="hljs-number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      <span class="hljs-keyword">return</span> answer;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>핵심 연산을 해주는 <code>answer[i] = x*(i+1)</code> 에서 반복문을 세주는 i가 int형이고 만약 x도 int형일 때 <code>x*(i+1)</code> 연산에서 <code>answer[i]</code> 값은 곱했을 때 당연히 int가 된다. (배열 선언은 long으로 해줬으면서 말이다.) 그래서 answer 배열은 n만큼 할당해줘야 하기에 solution의 변수 n을 int로 놔뒀고, 제한조건 범위 내의 연산을 위해(long 타입 연산을 위해) long 타입으로 바꿨다.</p>
+<p>핵심 연산을 해주는 <code>answer[i] = x*(i+1)</code> 에서 반복문을 세주는 i가 int형이고 만약 x도 int형일 때 <code>x*(i+1)</code> 연산에서 <code>answer[i]</code> 값은 곱했을 때 당연히 int가 된다. (배열 선언은 long으로 해줬으면서 말이다.) 그래서 answer 배열은 n만큼 할당해줘야 하기에 solution의 변수 n을 int로 놔뒀고, 제한조건 범위 내의 연산을 위해(long 타입 연산을 위해) long 타입으로 바꿨다</p>
 
         </div>
         
@@ -843,7 +843,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
     
     
-<a id="back-to-top" title="Back to Top" href="javascript:;" target="_blank" rel="noopener">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
