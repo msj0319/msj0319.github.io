@@ -9,8 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 11 Feb 2020 14:53:11 GMT</pubDate>
+    <pubDate>Tue, 11 Feb 2020 16:44:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[BOJ] 10828번 - 스택</title>
+      <link>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/</link>
+      <guid>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/</guid>
+      <pubDate>Tue, 11 Feb 2020 16:26:09 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;학부생 때 배웠던 &lt;code&gt;스택&lt;/code&gt; 자료구조 이론을 토대로 스택 배열 생성, &lt;code&gt;push&lt;/code&gt; , &lt;code&gt;pop&lt;/code&gt; 연산 등을 구현해보는 문제였다.&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] x만큼 간격이 있는 n개의 숫자</title>
