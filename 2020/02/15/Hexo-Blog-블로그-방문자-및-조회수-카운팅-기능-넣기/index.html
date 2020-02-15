@@ -19,7 +19,7 @@
 <meta property="og:description" content="해당 포스트는 Hexo theme 중 icarus 테마에 적용한 내용입니다. 지원이 되지 않거나, 설정 방법에서 약간의 차이가 있을 수 있습니다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;hexo.png">
-<meta property="og:updated_time" content="2020-02-15T15:22:47.481Z">
+<meta property="og:updated_time" content="2020-02-15T15:38:44.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;hexo.png">
 
@@ -152,7 +152,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2분 읽기 (대략 352 단어)
+                    2분 읽기 (대략 350 단어)
                 </span>
                 
                 
@@ -178,7 +178,7 @@
 <p><strong>Busuanzi 공식 사이트</strong> : <a href="https://busuanzi.ibruce.info/" target="_blank" rel="external nofollow noopener noreferrer">https://busuanzi.ibruce.info/</a> <br><br><strong>Busuanzi 사용 법 기술 사이트</strong> : <a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="external nofollow noopener noreferrer">http://ibruce.info/2015/04/04/busuanzi/</a></p>
 <p><img src="https://user-images.githubusercontent.com/40822689/74590355-f8ccd280-5050-11ea-9248-18232ee8814b.PNG" alt="busuanzi_2"></p>
 <p><img src="https://user-images.githubusercontent.com/40822689/74590377-29ad0780-5051-11ea-8db4-3c7b6a6700d1.PNG" alt="busuanzi_1"></p>
-<h2 id="설정"><a href="#설정" class="headerlink" title="설정"></a><strong>설정</strong></h2><p>먼저 <code>theme\_config.yml</code> 로 들어가 <code>busuanzi</code> 섹션을 찾고 해당 기능을 <code>true</code>로 상태를 활성화 시킨다.<br><br><br><code><br>    busuanzi: true<br></code> <br><br><br>그 다음 <code>theme\layout\common\footer.ejs</code> 에서 몇가지 구문을 넣어준다.<br><br></p>
+<h2 id="설정"><a href="#설정" class="headerlink" title="설정"></a><strong>설정</strong></h2><p>먼저 <code>theme\_config.yml</code> 로 들어가 <code>busuanzi</code> 섹션을 찾고 해당 기능을 <code>true</code>로 상태를 활성화 시킨다.<br>그 다음 <code>theme\layout\common\footer.ejs</code> 에서 몇가지 구문을 넣어준다.<br><br></p>
 <figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">%</span> <span class="hljs-attr">if</span> (<span class="hljs-attr">busuanzi</span>) &#123; %&gt;</span> <span class="hljs-comment">&lt;!--만약 busuanzi 가 활성화됐으면--&gt;</span></span><br><span class="line">                <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span><br><span class="line">                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"busuanzi_container_site_pv"</span>&gt;</span> </span><br><span class="line">                    총 조회 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"busuanzi_container_site_pv"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 회</span><br><span class="line">                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> |</span><br><span class="line">                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"busuanzi_container_site_uv"</span>&gt;</span></span><br><span class="line">                    총 방문자 <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"busuanzi_value_site_uv"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 명</span><br><span class="line">                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span><br><span class="line">                <span class="hljs-tag">&lt;<span class="hljs-name">%</span> &#125; %&gt;</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://user-images.githubusercontent.com/40822689/74590391-52350180-5051-11ea-9151-97439d2a1736.PNG" alt="visitor_count"></p>
 <p>아직 많은…분들께서 방문해주시지 못했지만 이렇게 기능이 추가된 것을 볼 수 있다.<br><br>열심히 노력하자!</p>
