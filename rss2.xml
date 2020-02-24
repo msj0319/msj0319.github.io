@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 15 Feb 2020 15:38:44 GMT</pubDate>
+    <pubDate>Mon, 24 Feb 2020 11:53:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[프로그래머스] 수박수박수박수박수박수?</title>
+      <link>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/</link>
+      <guid>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/</guid>
+      <pubDate>Mon, 24 Feb 2020 11:49:53 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;입력 n이 1일 땐 “수” 출력, n이 2이면 “수박”, 3이면 “수박수” … index 초기값을 1로 초기화 하고 반복문을 통해 i가 증가 할때마다 홀수, 짝수 판별을 한다. 만약 홀수면 “수”, 짝수면 “박”을 answer 에 추가해가면서 n
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[Hexo Blog] 블로그 방문자 및 조회수 카운팅 기능 넣기 (Busuanzi)</title>
