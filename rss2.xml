@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 24 Feb 2020 11:53:45 GMT</pubDate>
+    <pubDate>Mon, 24 Feb 2020 11:55:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -19,10 +19,7 @@
       <pubDate>Mon, 24 Feb 2020 11:49:53 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;p&gt;입력 n이 1일 땐 “수” 출력, n이 2이면 “수박”, 3이면 “수박수” … index 초기값을 1로 초기화 하고 반복문을 통해 i가 증가 할때마다 홀수, 짝수 판별을 한다. 만약 홀수면 “수”, 짝수면 “박”을 answer 에 추가해가면서 n
-        
+        &lt;p&gt;입력 n이 1일 땐 “수” 출력, n이 2이면 “수박”, 3이면 “수박수” … index 초기값을 1로 초기화 하고 반복문을 통해 i가 증가 할때마다 홀수, 짝수 판별을 한다. 만약 홀수면 “수”, 짝수면 “박”을 answer 에 추가해가면서 n번 반복한다.&lt;/p&gt;
       
       </description>
       
