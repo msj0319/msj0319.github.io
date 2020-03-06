@@ -9,8 +9,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 26 Feb 2020 14:06:10 GMT</pubDate>
+    <pubDate>Fri, 06 Mar 2020 13:54:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 앱 상단바 없애기</title>
+      <link>https://msj0319.github.io/2020/03/06/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%83%81%EB%8B%A8%EB%B0%94-%EC%97%86%EC%95%A0%EA%B8%B0/</link>
+      <guid>https://msj0319.github.io/2020/03/06/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%83%81%EB%8B%A8%EB%B0%94-%EC%97%86%EC%95%A0%EA%B8%B0/</guid>
+      <pubDate>Fri, 06 Mar 2020 13:50:16 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;프로젝트의 values 디렉토리 내부의 &lt;code&gt;styles.xml&lt;/code&gt; 구문을 추가한다.&lt;/p&gt;
+&lt;figure class=&quot;highlight xml hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span c
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/03/06/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%83%81%EB%8B%A8%EB%B0%94-%EC%97%86%EC%95%A0%EA%B8%B0/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[프로그래머스] 시저 암호</title>
