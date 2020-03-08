@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 08 Mar 2020 12:26:40 GMT</pubDate>
+    <pubDate>Sun, 08 Mar 2020 14:18:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 앱 프로젝트에서 SHA-1, SHA-256 인증서 지문 찾기</title>
+      <link>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-SHA-1-SHA-256-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A7%80%EB%AC%B8-%EC%B0%BE%EA%B8%B0/</link>
+      <guid>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-SHA-1-SHA-256-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A7%80%EB%AC%B8-%EC%B0%BE%EA%B8%B0/</guid>
+      <pubDate>Sun, 08 Mar 2020 14:15:19 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;작업 Window에서 오른쪽에 보면 Gradle로 작은 탭이 있는 것을 볼 수 있다.&lt;br&gt;그걸 누르고 &lt;strong&gt;app-&amp;gt;Tasks-&amp;gt;signingReport&lt;/strong&gt; 를 더블 클릭하면 아래 콘솔 창에 원하는 정보가 출력된
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-SHA-1-SHA-256-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A7%80%EB%AC%B8-%EC%B0%BE%EA%B8%B0/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 앱 인터넷 권한 설정</title>
