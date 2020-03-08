@@ -9,8 +9,21 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 06 Mar 2020 13:59:19 GMT</pubDate>
+    <pubDate>Sun, 08 Mar 2020 12:20:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 앱 인터넷 권한 설정</title>
+      <link>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/</link>
+      <guid>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/</guid>
+      <pubDate>Sun, 08 Mar 2020 12:20:37 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 앱 상단바 없애기</title>
@@ -21,8 +34,8 @@
       
         
         
-          &lt;p&gt;프로젝트의 values 디렉토리 내부의 &lt;code&gt;styles.xml&lt;/code&gt; 구문을 추가한다.&lt;/p&gt;
-&lt;figure class=&quot;highlight xml hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span c
+          &lt;p&gt;프로젝트의 values 디렉토리 내부의 &lt;code&gt;styles.xml&lt;/code&gt;에 아래 구문을 추가한다.&lt;/p&gt;
+&lt;figure class=&quot;highlight xml hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;sp
         
       
       </description>
