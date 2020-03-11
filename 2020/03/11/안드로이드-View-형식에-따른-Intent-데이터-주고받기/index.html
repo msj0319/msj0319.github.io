@@ -19,7 +19,7 @@
 <meta property="og:description" content="졸업 프로젝트를 위해 프로토타입을 만들던 중 될 것 같던 부분이 안되어 해결 후 정리해보았다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;android.png">
-<meta property="og:updated_time" content="2020-03-11T13:59:05.284Z">
+<meta property="og:updated_time" content="2020-03-11T14:04:34.123Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;android.png">
 
@@ -169,7 +169,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3분 읽기 (대략 418 단어)
+                    3분 읽기 (대략 424 단어)
                 </span>
                 
                 
@@ -189,7 +189,7 @@
         <div class="content">
             <p>졸업 프로젝트를 위해 프로토타입을 만들던 중 될 것 같던 부분이 안되어 해결 후 정리해보았다.</p>
 <a id="more"></a>
-<p>하나의 액티비티에서 데이터를 다른 액티비티로 보내기 위해선 intent 객체를 만들어 <code>putExtra()</code> 메소드로 데이터를 묶어 받는 액티비티에선 <code>getXXExtra()</code> (XX는 자료형) 메소드로 데이터를 받는 것이 기본적이다. <br></p>
+<p>하나의 액티비티에서 데이터를 다른 액티비티로 보내기 위해선 intent 객체를 만들어 <code>putExtra()</code> 메소드로 데이터를 묶어 보낸다. 그리고 받는 액티비티에선 <code>getXXExtra()</code> (XX는 자료형) 메소드로 데이터를 받는 것이 기본적이다. <br></p>
 <p>간단한 회원가입 레이아웃을 만들고, 사용자가 <code>Plain Text</code> View에 학번(StudentID)을 입력한다. 제출 버튼을 누르면 해당 액티비티 <code>VerifyEmailActivity</code> 에 보내고, 동일한 <code>Plain Text</code> 에 입력했던 아이디가 그대로 나타나는 로직을 구현하고 싶었다. <br></p>
 <p>사용자가 한번 더 입력할 필요없이 한번 입력했던 학번이 자동으로 표시되도록 만들고 싶었다.</p>
 <figure class="highlight kotlin hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 데이터 보내는 액티비티</span></span><br><span class="line"><span class="hljs-keyword">val</span> intent = Intent (<span class="hljs-keyword">this</span>, VerifyEmailActivity::<span class="hljs-class"><span class="hljs-keyword">class</span>.<span class="hljs-title">java</span>)</span></span><br><span class="line">intent.putExtra(<span class="hljs-string">"studentID"</span>,studentID.text.toString())</span><br><span class="line">startActivity(intent)</span><br></pre></td></tr></table></figure>
@@ -199,6 +199,7 @@
 TextView는 사용자의 직접 입력없이 설정한 text만 설정하면 보여지는 View이기에 이렇게 간단하게 원하는 Text를 인텐트로 받아 설정할 수 있었다. 하지만 사용자가 입력한 Text가 인텐트로 보냈을 시 받는 View의 상태가 만약 똑같은 Plain Text라면 다음 코드 처럼 작성해야 한다는 것을 알게 되었다. 
 
 <figure class="highlight kotlin hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//코드 수정 Plain Text -&gt; Plain Text</span></span><br><span class="line"><span class="hljs-keyword">var</span> studentID = intent.getStringExtra(<span class="hljs-string">"studentID"</span>)</span><br><span class="line"><span class="hljs-keyword">if</span> (!studentID.isNullOrEmpty()) &#123;</span><br><span class="line">            studentIDText.setText(studentID) <span class="hljs-comment">//setText method 사용</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
