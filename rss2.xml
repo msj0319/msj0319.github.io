@@ -9,8 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 08 Mar 2020 14:18:03 GMT</pubDate>
+    <pubDate>Wed, 11 Mar 2020 13:59:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드][Kotlin] View 형식에 따른 Intent 데이터 주고받기</title>
+      <link>https://msj0319.github.io/2020/03/11/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-View-%ED%98%95%EC%8B%9D%EC%97%90-%EB%94%B0%EB%A5%B8-Intent-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B3%A0%EB%B0%9B%EA%B8%B0/</link>
+      <guid>https://msj0319.github.io/2020/03/11/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-View-%ED%98%95%EC%8B%9D%EC%97%90-%EB%94%B0%EB%A5%B8-Intent-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B3%A0%EB%B0%9B%EA%B8%B0/</guid>
+      <pubDate>Wed, 11 Mar 2020 13:31:10 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;졸업 프로젝트를 위해 프로토타입을 만들던 중 될 것 같던 부분이 안되어 해결 후 정리해보았다.&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/03/11/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-View-%ED%98%95%EC%8B%9D%EC%97%90-%EB%94%B0%EB%A5%B8-Intent-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B3%A0%EB%B0%9B%EA%B8%B0/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 앱 프로젝트에서 SHA-1, SHA-256 인증서 지문 찾기</title>
