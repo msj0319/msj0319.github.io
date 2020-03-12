@@ -19,7 +19,7 @@
 <meta property="og:description" content="졸업 프로젝트를 위해 프로토타입을 만들던 중 될 것 같던 부분이 안되어 해결 후 정리해보았다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;android.png">
-<meta property="og:updated_time" content="2020-03-12T14:45:21.430Z">
+<meta property="og:updated_time" content="2020-03-12T14:52:48.180Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;android.png">
 
@@ -196,7 +196,7 @@
 
 <figure class="highlight kotlin hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// 데이터 받는 액티비티</span></span><br><span class="line"><span class="hljs-keyword">var</span> studentID = intent.getStringExtra(<span class="hljs-string">"studentID"</span>)</span><br><span class="line">TextView.text = studentID <span class="hljs-comment">//오류가 난 부분</span></span><br></pre></td></tr></table></figure>
 <br>
-TextView는 사용자의 직접 입력없이 설정한 text만 설정하면 보여지는 View이기에 이렇게 간단하게 원하는 Text를 인텐트로 받아 설정할 수 있었다. 하지만 사용자가 입력한 Text가 인텐트로 보냈을 시 받는 View의 상태가 만약 똑같은 Plain Text라면 다음 코드 처럼 작성해야 한다는 것을 알게 되었다
+TextView는 사용자의 직접 입력없이 설정한 text만 설정하면 보여지는 View이기에 이렇게 간단하게 원하는 Text를 인텐트로 받아 설정할 수 있었다. 하지만 사용자가 입력한 Text가 인텐트로 보냈을 시 받는 View의 상태가 만약 똑같은 Plain Text라면 다음 코드 처럼 작성해야 한다는 것을 알게 되었다.
 
 <figure class="highlight kotlin hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//코드 수정 Plain Text -&gt; Plain Text</span></span><br><span class="line"><span class="hljs-keyword">var</span> studentID = intent.getStringExtra(<span class="hljs-string">"studentID"</span>)</span><br><span class="line"><span class="hljs-keyword">if</span> (!studentID.isNullOrEmpty()) &#123;</span><br><span class="line">            studentIDText.setText(studentID) <span class="hljs-comment">//setText method 사용</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
