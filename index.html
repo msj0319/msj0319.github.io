@@ -146,6 +146,86 @@
     
 <div class="card">
     
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-07T13:00:07.000Z">2020-05-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Data-Structure/">Data Structure</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4분 읽기 (대략 633 단어)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/05/07/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-01-Introduction/">[자료구조] 자료구조란 무엇인가?</a>
+            
+        </h1>
+        <div class="content">
+            <p><strong>본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.</strong> </p>
+<h1 id="1-1-컴퓨터란-무엇인가"><a href="#1-1-컴퓨터란-무엇인가" class="headerlink" title="1-1. 컴퓨터란 무엇인가?"></a>1-1. 컴퓨터란 무엇인가?</h1><p>컴퓨터는 <code>ENIAC</code> - 에니악 (전자식 숫자 적분 및 계산기)를 최초로 (ABC가 최초의 컴퓨터라는 이의로 미국 법원에서 승소, 영국이 발명한 콜로서스가 최초라는 말도 존재한다.) 30년 뒤 Apple 2 컴퓨터, 그 후로 30년 뒤 iPhone 이 발명되었으며 지금에 이르기 까지 존재했다. 그럼 다음 세대가 될 컴퓨터는 무엇일까?<br><br><br><br><br>우리는 3 * 4 = 12 이고 13 * 3 = 39 라는 계산 식을 암산으로 쉽게 계산이 가능하다. 하지만 세자리 수 * 세자리 수 계산은 종이에 써보면서 계산하거나 계산기를 이용하여 답을 도출해내는 것이 일반적이다. (암산으로 가능한 사람이 있을 수 있고…) <strong>연산과 기억을 동시에 해야한다</strong> 라는 점 때문에 우리는 복잡해지는 연산을 쉽게 계산하기 어려운 것이다.<br><br><br><br></p>
+<h2 id="Computer"><a href="#Computer" class="headerlink" title="Computer?"></a>Computer?</h2><p>계산하는 사람이라는 뜻의 단어로 요즘은 Desktop, 스마트폰 등 여러가지 전자기기에 붙는 수식어가 되었다. 앞서 말했 듯 계산은 연산과 기억을 동시에 수행해야 한다고 말했다.</p>
+<ul>
+<li>계산(Computation) = 연산(calculation) + 기억 (Memory)</li>
+<li>컴퓨터 = CPU + Memory</li>
+</ul>
+<p>튜링 머신을 시작으로 좀 더 보완된 <code>폰 노이만 구조</code>가 요즘 컴퓨터에 까지 쓰이고 있다.<br><br><br><img src="https://user-images.githubusercontent.com/40822689/81294595-163a9700-90aa-11ea-8be2-2609b67471f9.png" alt="image"></p>
+<ul>
+<li>연산을 저장하는 Memory</li>
+<li>연산을 담당하는 Processor<ul>
+<li>컴퓨터의 내부를 담당하는 Control Unit</li>
+<li>수치, 논리계산을 담당하는 ALU 부분으로 구성되어 있다.</li>
+</ul>
+</li>
+<li>메모리와 프로세서가 서로 상호작용하며 연산을 수행한다.</li>
+</ul>
+<p><br><br></p>
+<h1 id="자료구조란-무엇인가"><a href="#자료구조란-무엇인가" class="headerlink" title="자료구조란 무엇인가?"></a>자료구조란 무엇인가?</h1><p><strong>자료구조란 데이터를 효율적으로 관리하는 기법이다.</strong></p>
+<ul>
+<li><strong>데이터 (Data)</strong> : 데이터를 저장하는 기본적인 단위 (int, float, char, class/struct, etc)</li>
+<li><strong>효율적 (Efficiency)</strong> : <code>solution/resource</code> <ul>
+<li>solution을 내기 위해 투입 된 resource 로 나눈 것. </li>
+<li>공간(Memory) 적게, 시간(CPU)도 적게.</li>
+</ul>
+</li>
+<li><strong>관리</strong> : 프로그램을 사용하며 많이 사용하는 연산<ul>
+<li>삽입, 검색, 제거</li>
+</ul>
+</li>
+<li><strong>기법</strong> : <strong>구조</strong> (데이터가 저장되어 있는 구조) + <strong>연산</strong> (삽입, 검색, 제거)<ul>
+<li>추상 자료형 (Abstarct data type)</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
     <div class="card-image">
         <a href="/2020/03/11/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-View-%ED%98%95%EC%8B%9D%EC%97%90-%EB%94%B0%EB%A5%B8-Intent-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A3%BC%EA%B3%A0%EB%B0%9B%EA%B8%B0/" class="image is-7by1">
             <img class="thumbnail" src="/images/android.png" alt="[안드로이드][Kotlin] View 형식에 따른 Intent 데이터 주고받기">
@@ -653,65 +733,6 @@
 
 
 
-    
-<div class="card">
-    
-    <div class="card-image">
-        <a href="/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/" class="image is-7by1">
-            <img class="thumbnail" src="/images/img-programmers.png" alt="[프로그래머스] x만큼 간격이 있는 n개의 숫자">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-06T17:40:42.000Z">2020-02-07</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    1분 읽기 (대략 212 단어)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/">[프로그래머스] x만큼 간격이 있는 n개의 숫자</a>
-            
-        </h1>
-        <div class="content">
-            <p>문제 자체는 쉬웠지만 자칫 그냥 써버릴 수 있는 int 타입이 입력 변수 범위가 제한조건에 걸려 테스트케이스에서 실패를 했었던 문제다. </p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/#more">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -727,6 +748,8 @@
             <li><a class="pagination-link is-current" href="/">1</a></li>
             
             <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            
+            <li><a class="pagination-link has-text-black-ter" href="/page/3/">3</a></li>
             
         </ul>
     </nav>
@@ -777,7 +800,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            20
+                            21
                         </p>
                     </a>
                 </div>
@@ -789,7 +812,7 @@
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
-                            5
+                            6
                         </p>
                     </a>
                 </div>
@@ -801,7 +824,7 @@
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            38
+                            39
                         </p>
                     </a>
                 </div>
@@ -970,6 +993,14 @@
                 <span class="level-item tag">4</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/Data-Structure/">
+            <span class="level-start">
+                <span class="level-item">Data Structure</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/Hexo/">
             <span class="level-start">
                 <span class="level-item">Hexo</span>
@@ -988,7 +1019,7 @@
         <h3 class="menu-label">
             태그 클라우드
         </h3>
-        <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/BOJ/" style="font-size: 10px;">BOJ</a> <a href="/tags/Blog/" style="font-size: 14px;">Blog</a> <a href="/tags/Gradle/" style="font-size: 10px;">Gradle</a> <a href="/tags/Hexo/" style="font-size: 14px;">Hexo</a> <a href="/tags/Kotlin/" style="font-size: 10px;">Kotlin</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/SEO/" style="font-size: 12px;">SEO</a> <a href="/tags/SHA1/" style="font-size: 10px;">SHA1</a> <a href="/tags/SHA256/" style="font-size: 10px;">SHA256</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/ascii/" style="font-size: 12px;">ascii</a> <a href="/tags/atoi/" style="font-size: 10px;">atoi</a> <a href="/tags/copyOfRange/" style="font-size: 10px;">copyOfRange()</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/integer/" style="font-size: 10px;">integer</a> <a href="/tags/intent/" style="font-size: 10px;">intent</a> <a href="/tags/isLowerCase/" style="font-size: 10px;">isLowerCase()</a> <a href="/tags/isUpperCase/" style="font-size: 10px;">isUpperCase()</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/manifest/" style="font-size: 10px;">manifest</a> <a href="/tags/parse/" style="font-size: 10px;">parse</a> <a href="/tags/permission/" style="font-size: 10px;">permission</a> <a href="/tags/plugin/" style="font-size: 12px;">plugin</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/%EA%B6%8C%ED%95%9C/" style="font-size: 10px;">권한</a> <a href="/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%86%B5%EC%8B%A0/" style="font-size: 10px;">데이터통신</a> <a href="/tags/%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98/" style="font-size: 10px;">방문자수</a> <a href="/tags/%EB%B0%B1%EC%A4%80/" style="font-size: 10px;">백준</a> <a href="/tags/%EC%83%81%EB%8B%A8%EB%B0%94/" style="font-size: 10px;">상단바</a> <a href="/tags/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C/" style="font-size: 16px;">안드로이드</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 20px;">알고리즘</a> <a href="/tags/%EC%95%A1%EC%85%98%EB%B0%94/" style="font-size: 10px;">액션바</a> <a href="/tags/%EC%A0%95%EB%A0%AC/" style="font-size: 10px;">정렬</a> <a href="/tags/%EC%A1%B0%ED%9A%8C%EC%88%98/" style="font-size: 10px;">조회수</a> <a href="/tags/%EC%BD%94%ED%8B%80%EB%A6%B0/" style="font-size: 10px;">코틀린</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 18px;">프로그래머스</a>
+        <a href="/tags/" style="font-size: 10px;">==</a> <a href="/tags/Algorithm/" style="font-size: 20px;">Algorithm</a> <a href="/tags/BOJ/" style="font-size: 10px;">BOJ</a> <a href="/tags/Blog/" style="font-size: 14px;">Blog</a> <a href="/tags/Gradle/" style="font-size: 10px;">Gradle</a> <a href="/tags/Hexo/" style="font-size: 14px;">Hexo</a> <a href="/tags/Kotlin/" style="font-size: 10px;">Kotlin</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/SEO/" style="font-size: 12px;">SEO</a> <a href="/tags/SHA1/" style="font-size: 10px;">SHA1</a> <a href="/tags/SHA256/" style="font-size: 10px;">SHA256</a> <a href="/tags/Stack/" style="font-size: 10px;">Stack</a> <a href="/tags/ascii/" style="font-size: 12px;">ascii</a> <a href="/tags/atoi/" style="font-size: 10px;">atoi</a> <a href="/tags/copyOfRange/" style="font-size: 10px;">copyOfRange()</a> <a href="/tags/equals/" style="font-size: 10px;">equals()</a> <a href="/tags/integer/" style="font-size: 10px;">integer</a> <a href="/tags/intent/" style="font-size: 10px;">intent</a> <a href="/tags/isLowerCase/" style="font-size: 10px;">isLowerCase()</a> <a href="/tags/isUpperCase/" style="font-size: 10px;">isUpperCase()</a> <a href="/tags/long/" style="font-size: 10px;">long</a> <a href="/tags/manifest/" style="font-size: 10px;">manifest</a> <a href="/tags/parse/" style="font-size: 10px;">parse</a> <a href="/tags/permission/" style="font-size: 10px;">permission</a> <a href="/tags/plugin/" style="font-size: 12px;">plugin</a> <a href="/tags/sort/" style="font-size: 10px;">sort</a> <a href="/tags/%EA%B6%8C%ED%95%9C/" style="font-size: 10px;">권한</a> <a href="/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%86%B5%EC%8B%A0/" style="font-size: 10px;">데이터통신</a> <a href="/tags/%EB%B0%A9%EB%AC%B8%EC%9E%90%EC%88%98/" style="font-size: 10px;">방문자수</a> <a href="/tags/%EB%B0%B1%EC%A4%80/" style="font-size: 10px;">백준</a> <a href="/tags/%EC%83%81%EB%8B%A8%EB%B0%94/" style="font-size: 10px;">상단바</a> <a href="/tags/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C/" style="font-size: 16px;">안드로이드</a> <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/" style="font-size: 20px;">알고리즘</a> <a href="/tags/%EC%95%A1%EC%85%98%EB%B0%94/" style="font-size: 10px;">액션바</a> <a href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/" style="font-size: 10px;">자료구조</a> <a href="/tags/%EC%A0%95%EB%A0%AC/" style="font-size: 10px;">정렬</a> <a href="/tags/%EC%A1%B0%ED%9A%8C%EC%88%98/" style="font-size: 10px;">조회수</a> <a href="/tags/%EC%BD%94%ED%8B%80%EB%A6%B0/" style="font-size: 10px;">코틀린</a> <a href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/" style="font-size: 18px;">프로그래머스</a>
     </div>
 </div>
     
@@ -997,6 +1028,25 @@
         <h3 class="menu-label">
             최근 글
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/05/07/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-01-Introduction/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="[자료구조] 자료구조란 무엇인가?">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-07T13:00:07.000Z">2020-05-07</time></div>
+                    <a href="/2020/05/07/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-01-Introduction/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[자료구조] 자료구조란 무엇인가?</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/Data-Structure/">Data Structure</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -1074,25 +1124,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2020/02/25/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%8B%9C%EC%A0%80-%EC%95%94%ED%98%B8/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/img-programmers.png" alt="[프로그래머스] 시저 암호">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-24T16:20:15.000Z">2020-02-25</time></div>
-                    <a href="/2020/02/25/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%8B%9C%EC%A0%80-%EC%95%94%ED%98%B8/" class="title has-link-black-ter is-size-6 has-text-weight-normal">[프로그래머스] 시저 암호</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a> / <a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
     
@@ -1103,6 +1134,17 @@
             아카이브
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/05/">
+                <span class="level-start">
+                    <span class="level-item">5월 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/03/">
@@ -1384,6 +1426,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%EC%95%A1%EC%85%98%EB%B0%94/">
                         <span class="tag">액션바</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/">
+                        <span class="tag">자료구조</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
