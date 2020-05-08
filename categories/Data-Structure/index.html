@@ -171,7 +171,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4분 읽기 (대략 557 단어)
+                    4분 읽기 (대략 600 단어)
                 </span>
                 
                 
@@ -225,6 +225,8 @@
 <ul>
 <li>f(n) = O(1)</li>
 <li>반복문을 이용한 별 찍기 보다 <code>printf(&quot;*&quot;)</code>를 이용한 별 찍기가 효율이 좋다!(?)</li>
+<li>입력이 증가해도 일정한 시간이 걸린다.</li>
+<li>가장 이상적인 성능</li>
 </ul>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Hello"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -233,6 +235,8 @@
 <p><strong>선형 시간 복잡도(linear time complex)</strong></p>
 <ul>
 <li>f(n) = O(n)</li>
+<li>시간은 입력의 크기(n)에 비례한다.</li>
+<li>for-loop와 while문</li>
 </ul>
 <figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    i=<span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (i &lt; n) &#123;</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"hello"</span>);</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
