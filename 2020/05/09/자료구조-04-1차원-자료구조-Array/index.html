@@ -19,7 +19,7 @@
 <meta property="og:description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;datastructure.jpg">
-<meta property="og:updated_time" content="2020-05-09T11:24:55.690Z">
+<meta property="og:updated_time" content="2020-05-09T11:30:54.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;datastructure.jpg">
 
@@ -192,14 +192,11 @@
 <h1 id="1차원-자료구조"><a href="#1차원-자료구조" class="headerlink" title="1차원 자료구조"></a>1차원 자료구조</h1><p>우리는 다양한 앱을 사용한다 그런 다양한 앱을 통해 자료를 관리한다. 자세히 들여다보면 우리는 자료의 list를 관리한다.</p>
 <h3 id="자료의-관리는-‘추가’-‘검색’-‘제거’로-이루어진다"><a href="#자료의-관리는-‘추가’-‘검색’-‘제거’로-이루어진다" class="headerlink" title="자료의 관리는 ‘추가’, ‘검색’, ‘제거’로 이루어진다."></a>자료의 관리는 ‘추가’, ‘검색’, ‘제거’로 이루어진다.</h3><p> 우리는 주소록 App에 새로 A라는 친구 번호를 ‘추가’하고, ‘제거’를 통해 B의 전화번호를 삭제한다. 하지만 사용빈도를 따져봤을 때 추가, 제거 보다는 ‘검색’ 연산을 통해 주소록에 저장 된 지인의 번호를 검색할 때가 가장 많다고 볼 수 있다.<br> 따라서 <strong>검색이 잘 되는 자료구조가 가장 좋은 자료구조</strong> 라고 말할 수 있다.</p>
 <h2 id="List의-정의"><a href="#List의-정의" class="headerlink" title="List의 정의"></a>List의 정의</h2><ol>
-<li><p>유한한 원소들의 나열 (a finite sequence of elements)</p>
-</li>
-<li><p>각 원소들은 index에 대응 된다.</p>
-</li>
-<li><p>(index, element) 쌍</p>
-<h2 id="List-구현-방법"><a href="#List-구현-방법" class="headerlink" title="List 구현 방법"></a>List 구현 방법</h2></li>
+<li>유한한 원소들의 나열 (a finite sequence of elements)</li>
+<li>각 원소들은 index에 대응 된다.</li>
+<li>(index, element) 쌍</li>
 </ol>
-<ul>
+<h2 id="List-구현-방법"><a href="#List-구현-방법" class="headerlink" title="List 구현 방법"></a>List 구현 방법</h2><ul>
 <li><p>배열 (Array) : <strong>index</strong>에 기반한 구현</p>
 </li>
 <li><p>연결 리스트 (Linked List) : <strong>Pointer</strong> 에 기반한 구현</p>
