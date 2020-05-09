@@ -10,16 +10,16 @@
 <title>[자료구조] 2. 성능분석 - 문도니의 테크로그</title>
 
 
-    <meta name="description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다. 2-1. 성능이란 무엇인가?어떤 자료구조가 좋은 자료구조인지 쉽게 생각해보려면 내가 여러 지도 앱에서 원하는 경로를 검색할 때를 생각해보면 편하다. 만약 카카오 맵 앱에서 서울역부터 집까지 가는 경로를 검색할 때는 0.1초가 걸리고 네이버 지도 앱에서 동일한 경로를 검색할">
+    <meta name="description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.">
 <meta name="keywords" content="자료구조,성능분석,최악의경우,Time Complexity">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[자료구조] 2. 성능분석">
 <meta property="og:url" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;2020&#x2F;05&#x2F;08&#x2F;%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-02-%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D&#x2F;index.html">
 <meta property="og:site_name" content="문도니의 테크로그">
-<meta property="og:description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다. 2-1. 성능이란 무엇인가?어떤 자료구조가 좋은 자료구조인지 쉽게 생각해보려면 내가 여러 지도 앱에서 원하는 경로를 검색할 때를 생각해보면 편하다. 만약 카카오 맵 앱에서 서울역부터 집까지 가는 경로를 검색할 때는 0.1초가 걸리고 네이버 지도 앱에서 동일한 경로를 검색할">
+<meta property="og:description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;datastructure.jpg">
-<meta property="og:updated_time" content="2020-05-09T08:44:00.234Z">
+<meta property="og:updated_time" content="2020-05-09T08:46:23.229Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;msj0319.github.io&#x2F;images&#x2F;datastructure.jpg">
 
@@ -169,7 +169,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7분 읽기 (대략 1007 단어)
+                    7분 읽기 (대략 1008 단어)
                 </span>
                 
                 
@@ -188,6 +188,7 @@
         </h1>
         <div class="content">
             <p><strong>본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.</strong></p>
+<a id="more"></a> 
 <h1 id="2-1-성능이란-무엇인가"><a href="#2-1-성능이란-무엇인가" class="headerlink" title="2-1. 성능이란 무엇인가?"></a>2-1. 성능이란 무엇인가?</h1><p>어떤 자료구조가 좋은 자료구조인지 쉽게 생각해보려면 내가 여러 지도 앱에서 원하는 경로를 검색할 때를 생각해보면 편하다. 만약 <code>카카오 맵 앱</code>에서 서울역부터 집까지 가는 경로를 검색할 때는 <code>0.1초</code>가 걸리고 <code>네이버 지도 앱</code>에서 동일한 경로를 검색할 때는 <code>0.2초</code>가 걸린다고 가정하자. (물론 예시일 뿐 네이버 앱이 안좋은 서비스라는 것은 아니다.)<br><br></p>
 <p>동일한 입력(출발지: 서울역, 도착지: 우리 집)을 주었을 때 <code>빠른 시간</code> 내에 정답(가장 빠른 경로)을 출력하는 앱이 가장 좋은 앱이 되고, 카카오 맵 앱은 좋은 자료구조로 짜여있다고 말할 수 있다. 결과적으로 <strong>성능이 좋다</strong></p>
 <ul>
