@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://msj0319.github.io/categories/Git/</loc>
+        <lastmod>2020-07-29T16:58:51.541Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/categories/Data-Structure/</loc>
-        <lastmod>2020-05-09T12:28:54.745Z</lastmod>
+        <lastmod>2020-05-09T12:32:08.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

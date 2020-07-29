@@ -9,8 +9,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 09 May 2020 12:28:54 GMT</pubDate>
+    <pubDate>Wed, 29 Jul 2020 16:58:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Git] Branch 관련 명령어</title>
+      <link>https://msj0319.github.io/2020/07/30/Git-01-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%A9%94%EB%AA%A8/</link>
+      <guid>https://msj0319.github.io/2020/07/30/Git-01-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%A9%94%EB%AA%A8/</guid>
+      <pubDate>Wed, 29 Jul 2020 15:38:10 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;브랜치 생성&lt;/p&gt;
+&lt;figure class=&quot;highlight plain hljs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2020/07/30/Git-01-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%A9%94%EB%AA%A8/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[자료구조] 05. Array</title>
@@ -308,21 +328,6 @@
       
       
       <comments>https://msj0319.github.io/2020/01/27/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-K%EB%B2%88%EC%A7%B8-%EC%88%98/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] 직사각형 별 찍기</title>
-      <link>https://msj0319.github.io/2020/01/26/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95-%EB%B3%84-%EC%B0%8D%EA%B8%B0/</link>
-      <guid>https://msj0319.github.io/2020/01/26/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95-%EB%B3%84-%EC%B0%8D%EA%B8%B0/</guid>
-      <pubDate>Sun, 26 Jan 2020 10:34:47 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;이중 for문을 잘 이해하라!&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/01/26/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95-%EB%B3%84-%EC%B0%8D%EA%B8%B0/#disqus_thread</comments>
     </item>
     
   </channel>
