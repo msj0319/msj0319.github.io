@@ -59,13 +59,6 @@
     </url>
 
     <url>
-        <loc>https://msj0319.github.io/tags/%25EC%25B6%2594%25EA%25B0%2580/</loc>
-        <lastmod>2020-05-09T12:32:08.795Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://msj0319.github.io/tags/%25EC%25A0%259C%25EA%25B1%25B0/</loc>
         <lastmod>2020-05-09T12:32:08.795Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -74,6 +67,13 @@
 
     <url>
         <loc>https://msj0319.github.io/tags/%25EA%25B2%2580%25EC%2583%2589/</loc>
+        <lastmod>2020-05-09T12:32:08.795Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/tags/%25EC%25B6%2594%25EA%25B0%2580/</loc>
         <lastmod>2020-05-09T12:32:08.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
