@@ -9,20 +9,17 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 04 Jan 2021 01:56:12 GMT</pubDate>
+    <pubDate>Mon, 04 Jan 2021 02:07:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[HTML/CSS]-01-HTML/CSS 기초</title>
+      <title>[HTML/CSS] 01. HTML/CSS 기초</title>
       <link>https://msj0319.github.io/2021/01/04/HTML-CSS-01-HTML%EC%9D%98-%EA%B8%B0%EB%B3%B8/</link>
       <guid>https://msj0319.github.io/2021/01/04/HTML-CSS-01-HTML%EC%9D%98-%EA%B8%B0%EB%B3%B8/</guid>
       <pubDate>Mon, 04 Jan 2021 01:39:25 GMT</pubDate>
       <description>
       
-        
-        
-          &lt;h2 id=&quot;HTML의-이해&quot;&gt;&lt;a href=&quot;#HTML의-이해&quot; class=&quot;headerlink&quot; title=&quot;HTML의 이해&quot;&gt;&lt;/a&gt;&lt;strong&gt;HTML의 이해&lt;/strong&gt;&lt;/h2&gt;&lt;h3 id=&quot;HTML-소개&quot;&gt;&lt;a href=&quot;#HTML-
-        
+        &lt;p&gt;&lt;strong&gt;본 내용은 필자가 부스트코스 웹UI 개발 코스를 수강 후 공부하기 위해 정리한 것임을 알려드립니다.&lt;/strong&gt;&lt;/p&gt;
       
       </description>
       
