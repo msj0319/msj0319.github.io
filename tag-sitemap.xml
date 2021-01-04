@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://msj0319.github.io/tags/Web/</loc>
+        <lastmod>2021-01-04T01:56:12.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/tags/CSS/</loc>
+        <lastmod>2021-01-04T01:56:12.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/tags/HTML/</loc>
+        <lastmod>2021-01-04T01:56:12.635Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/tags/%25ED%2598%2591%25EC%2597%2585/</loc>
         <lastmod>2020-07-29T16:58:51.541Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,6 +52,13 @@
     </url>
 
     <url>
+        <loc>https://msj0319.github.io/tags/%25EC%25B6%2594%25EA%25B0%2580/</loc>
+        <lastmod>2020-05-09T12:32:08.795Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/tags/%25EC%25A0%259C%25EA%25B1%25B0/</loc>
         <lastmod>2020-05-09T12:32:08.795Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -39,13 +67,6 @@
 
     <url>
         <loc>https://msj0319.github.io/tags/%25EA%25B2%2580%25EC%2583%2589/</loc>
-        <lastmod>2020-05-09T12:32:08.795Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/tags/%25EC%25B6%2594%25EA%25B0%2580/</loc>
         <lastmod>2020-05-09T12:32:08.795Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
