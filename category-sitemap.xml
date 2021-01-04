@@ -8,8 +8,15 @@
     </url>
 
     <url>
+        <loc>https://msj0319.github.io/categories/Android/</loc>
+        <lastmod>2021-01-04T05:14:51.880Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/categories/HTML-CSS/</loc>
-        <lastmod>2021-01-04T02:32:30.369Z</lastmod>
+        <lastmod>2021-01-04T05:14:28.933Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -24,13 +31,6 @@
     <url>
         <loc>https://msj0319.github.io/categories/Data-Structure/</loc>
         <lastmod>2020-05-09T12:32:08.795Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/categories/Android/</loc>
-        <lastmod>2020-03-12T14:52:48.180Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
