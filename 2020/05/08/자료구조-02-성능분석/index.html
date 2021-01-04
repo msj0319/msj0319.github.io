@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>[자료구조] 02. 성능분석 - 문도니의 테크로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="문도니의 테크로그"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="문도니의 테크로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다."><meta property="og:type" content="article"><meta property="og:title" content="[자료구조] 02. 성능분석"><meta property="og:url" content="https://msj0319.github.io/2020/05/08/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-02-%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D/"><meta property="og:site_name" content="문도니의 테크로그"><meta property="og:description" content="본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://msj0319.github.io/images/datastructure.jpg"><meta property="article:published_time" content="2020-05-08T12:12:07.000Z"><meta property="article:modified_time" content="2020-05-09T11:22:34.893Z"><meta property="article:author" content="MoonDoni"><meta property="article:tag" content="자료구조"><meta property="article:tag" content="성능분석"><meta property="article:tag" content="최악의경우"><meta property="article:tag" content="Time Complexity"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/datastructure.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://msj0319.github.io/2020/05/08/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-02-%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D/"},"headline":"문도니의 테크로그","image":["https://msj0319.github.io/images/datastructure.jpg"],"datePublished":"2020-05-08T12:12:07.000Z","dateModified":"2020-05-09T11:22:34.893Z","author":{"@type":"Person","name":"MoonDoni"},"description":"본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다."}</script><link rel="canonical" href="https://msj0319.github.io/2020/05/08/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-02-%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D/"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><!--!--><meta name="generator" content="Hexo 5.0.2"><link rel="alternate" href="/rss2.xml" title="문도니의 테크로그" type="application/rss+xml">
+</head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">문도니의 테크로그</a></div><div class="navbar-menu"><div class="navbar-end"></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-12"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2020-05-08T12:12:07.000Z" title="2020-05-08T12:12:07.000Z">2020-05-08</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2020-05-09T11:22:34.893Z" title="2020-05-09T11:22:34.893Z">2020-05-09</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Data-Structure/">Data Structure</a></span></div></div><h1 class="title is-3 is-size-4-mobile">[자료구조] 02. 성능분석</h1><div class="content"><p><strong>본 내용은 필자가 학부 자료구조 수업내용을 공부하기 위해 정리한 것임을 알려드립니다.</strong></p>
+<a id="more"></a> 
+<h1 id="2-1-성능이란-무엇인가"><a href="#2-1-성능이란-무엇인가" class="headerlink" title="2-1. 성능이란 무엇인가?"></a>2-1. 성능이란 무엇인가?</h1><p>어떤 자료구조가 좋은 자료구조인지 쉽게 생각해보려면 내가 여러 지도 앱에서 원하는 경로를 검색할 때를 생각해보면 편하다. 만약 <code>카카오 맵 앱</code>에서 서울역부터 집까지 가는 경로를 검색할 때는 <code>0.1초</code>가 걸리고 <code>네이버 지도 앱</code>에서 동일한 경로를 검색할 때는 <code>0.2초</code>가 걸린다고 가정하자. (물론 예시일 뿐 네이버 앱이 안좋은 서비스라는 것은 아니다.)<br><br></p>
+<p>동일한 입력(출발지: 서울역, 도착지: 우리 집)을 주었을 때 <code>빠른 시간</code> 내에 정답(가장 빠른 경로)을 출력하는 앱이 가장 좋은 앱이 되고, 카카오 맵 앱은 좋은 자료구조로 짜여있다고 말할 수 있다. 결과적으로 <strong>성능이 좋다</strong></p>
+<ul>
+<li><strong>(재차 강조하지만 네이버 지도 앱을 비하하려는 목적이 아니다.)</strong></li>
+</ul>
+<p>그럼 성능이란 무엇일까?</p>
+<ul>
+<li>성능(Performance) 또는 효율(Efficient)이라고 말할 수 있다.</li>
+<li><strong>동일한 성과(Soluton)를 도출하기 위해서 요구되는 자원(Resource)의 크기</strong></li>
+<li><code>Performance = solution / resource</code></li>
+</ul>
+<p>효과적(effective)이란</p>
+<ul>
+<li>투입하는 자원(Resource)이 같을 때 얼마나 많은 solution을 도출하는가?</li>
+</ul>
+<h2 id="성능의-세가지-측면"><a href="#성능의-세가지-측면" class="headerlink" title="성능의 세가지 측면"></a>성능의 세가지 측면</h2><ul>
+<li>최선의 경우 (Best Case)</li>
+<li>평균의 경우 (Average Case)</li>
+<li><strong>최악의 경우 (Worst Case)</strong><ul>
+<li>시스템에 과도한 입력(사용자의 요청)이 들어와도 적어도 ‘해당 시간’에 처리한다.</li>
+<li><code>&#39;보장&#39;</code>의 의미</li>
+</ul>
+</li>
+</ul>
+<p>성능은 솔루션/자원이다. 그 중 분모에 해당하는 자원(리소스)은 <code>컴퓨터의 자원</code>을 뜻하는데,<br><br> 컴퓨터의 자원이라 함은 <code>메모리와 CPU</code>가 있다. <code>무어의 법칙</code>의 한계가 올 정도로 기술은 급속도로 변화되면서 공정 세밀화와 실리콘 기반 반도체에 한계가 찾아왔다. </p>
+<p>20nm 이후로는 기술적 구현 측면보다는 경제성의 측면에서 무어의 법칙이 멈출거라고 보는 전문가들이 많기 때문에 CPU의 성능은 좋아져도 가격이 어마무시하게 뛰게 될것이다. 반대로 메모리는 용량은 기하급수적으로 커지고 가격은 점점 싸지고 있다.</p>
+<h3 id="공간-복잡도-Space-Complexity"><a href="#공간-복잡도-Space-Complexity" class="headerlink" title="공간 복잡도 (Space-Complexity)"></a>공간 복잡도 (Space-Complexity)</h3><p>“특정한 프로그램을 수행하는 데 요구되는 메모리”</p>
+<ul>
+<li>공학적으로 생각해볼 때 메모리의 Cost는 낮아지고 용량은 커지고 있으므로 공간복잡도는 성능을 측정할 때 고려할 요소가 되지 않는다.</li>
+</ul>
+<h3 id="시간-복잡도-Time-Complexity"><a href="#시간-복잡도-Time-Complexity" class="headerlink" title="시간 복잡도 (Time-Complexity)"></a>시간 복잡도 (Time-Complexity)</h3><p>“특정한 프로그램을 수행하는 데 요구되는 시간”</p>
+<ul>
+<li><code>시간복잡도</code>로 시스템의 성능을 측정한다.</li>
+</ul>
+<hr>
+<h1 id="2-2-점근적-분석법-Asymptotic-Complexity"><a href="#2-2-점근적-분석법-Asymptotic-Complexity" class="headerlink" title="2-2. 점근적 분석법 (Asymptotic Complexity)"></a>2-2. 점근적 분석법 (Asymptotic Complexity)</h1><ul>
+<li>성능은 <code>입력의 크기</code>에 따라에 결정됨</li>
+<li>실제로 프로그램의 성능을 공정하게 판단하기 위해서는 입력의 크기만으로 판단한다.</li>
+<li>n : 입력의 크기</li>
+<li>시간 복잡도를 n(입력)의 함수로 표현 : f(n)</li>
+<li>시간 복잡도는 <code>매우 큰 입력</code>에 대해서 측정한다.<br>
+
+
+</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/40822689/81413481-756adb00-9180-11ea-8aeb-135e1baec4d7.png" alt="image"></p>
+<h3 id="동일한-크기의-입력-처리-시-같은-성능-함수-g-n-을-통한-f-n-의-성능-표현"><a href="#동일한-크기의-입력-처리-시-같은-성능-함수-g-n-을-통한-f-n-의-성능-표현" class="headerlink" title="동일한 크기의 입력 처리 시 같은 성능 함수 g(n)을 통한 f(n)의 성능 표현"></a>동일한 크기의 입력 처리 시 같은 성능 함수 g(n)을 통한 f(n)의 성능 표현</h3><p><img src="https://user-images.githubusercontent.com/40822689/81414105-6fc1c500-9181-11ea-9559-252133bb3405.png" alt="image"></p>
+<ul>
+<li>g(n) &gt;= f(n)</li>
+<li>g(n) 함수가 f(n) 함수보다 증가율이 크다면 g(n)은 f(n)보다 성능이 나쁘다.</li>
+<li>g(n)은 f(n)보다 시간이 더 많이 걸린다.</li>
+<li>최악의 경우에도 f(n)은 g(n)보다 좋다.</li>
+<li>f(n)의 upper bound(상한)는 g(n)이다.</li>
+<li>f(n)의 최악의 경우는 g(n)이다.</li>
+</ul>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/">자료구조</a><a class="link-muted mr-2" rel="tag" href="/tags/%EC%84%B1%EB%8A%A5%EB%B6%84%EC%84%9D/">성능분석</a><a class="link-muted mr-2" rel="tag" href="/tags/%EC%B5%9C%EC%95%85%EC%9D%98%EA%B2%BD%EC%9A%B0/">최악의경우</a><a class="link-muted mr-2" rel="tag" href="/tags/Time-Complexity/">Time Complexity</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/05/08/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-03-Big-O-%ED%91%9C%EA%B8%B0%EB%B2%95/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">[자료구조] 03. Big-O 표기법</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/05/07/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-01-Introduction/"><span class="level-item">[자료구조] 01. 자료구조란 무엇인가?</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><!--!--><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">문도니의 테크로그</a><p class="is-size-7"><span>&copy; 2021 MoonDoni</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a></p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><!--!--><script src="/js/main.js" defer></script><!--!--></body></html>
