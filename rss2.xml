@@ -9,8 +9,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Thu, 07 Jan 2021 13:02:48 GMT</pubDate>
+    <pubDate>Thu, 07 Jan 2021 15:46:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[HTML/CSS] 02. HTML 태그</title>
+      <link>https://msj0319.github.io/2021/01/08/HTML-CSS-02-HTML-%ED%83%9C%EA%B7%B8/</link>
+      <guid>https://msj0319.github.io/2021/01/08/HTML-CSS-02-HTML-%ED%83%9C%EA%B7%B8/</guid>
+      <pubDate>Thu, 07 Jan 2021 15:41:36 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;strong&gt;본 내용은 필자가 부스트코스 웹UI 개발 코스를 수강 후 공부하기 위해 정리한 것임을 알려드립니다.&lt;/strong&gt;&lt;/p&gt;
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2021/01/08/HTML-CSS-02-HTML-%ED%83%9C%EA%B7%B8/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[HTML/CSS] 01. HTML/CSS 기초</title>
@@ -311,23 +326,6 @@
       
       
       <comments>https://msj0319.github.io/2020/02/06/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EC%A0%95%EC%88%98%EB%A1%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[Hexo Blog] Markdown 플러그인 설치</title>
-      <link>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/</link>
-      <guid>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/</guid>
-      <pubDate>Mon, 27 Jan 2020 17:41:47 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;마크다운은 간단한 인라인 코드를 작성할 때 백틱을 이용한다.&lt;/p&gt;
-&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;code&quot;&gt;`(넣을 내용)`&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;근데 잘 쓰고 있던 중 어떤 md 파일은 먹히는데 새로 작성하는 파일에선 되지 않는 현상을 발견했다.&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/01/28/Hexo-Blog-Markdown-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EC%84%A4%EC%B9%98/#disqus_thread</comments>
     </item>
     
   </channel>
