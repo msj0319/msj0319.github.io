@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Wed, 17 Feb 2021 15:52:34 GMT</pubDate>
+    <pubDate>Fri, 19 Feb 2021 06:18:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 대표적인 레이아웃</title>
+      <link>https://msj0319.github.io/2021/02/19/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</link>
+      <guid>https://msj0319.github.io/2021/02/19/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/</guid>
+      <pubDate>Fri, 19 Feb 2021 05:11:15 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;대표적인-레이아웃&quot;&gt;&lt;a href=&quot;#대표적인-레이아웃&quot; class=&quot;headerlink&quot; title=&quot;대표적인 레이아웃&quot;&gt;&lt;/a&gt;&lt;strong&gt;대표적인 레이아웃&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;리니어-레이아웃-LinearLayou
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2021/02/19/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EB%8C%80%ED%91%9C%EC%A0%81%EC%9D%B8-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 제약 레이아웃(Constraint Layout)</title>
@@ -21,7 +39,7 @@
       
         
         
-          &lt;h1 id=&quot;제약-레이아웃-Constraint-Layout&quot;&gt;&lt;a href=&quot;#제약-레이아웃-Constraint-Layout&quot; class=&quot;headerlink&quot; title=&quot;제약 레이아웃(Constraint Layout)&quot;&gt;&lt;/a&gt;&lt;strong&gt;제약
+          &lt;h1 id=&quot;제약-레이아웃-ConstraintLayout&quot;&gt;&lt;a href=&quot;#제약-레이아웃-ConstraintLayout&quot; class=&quot;headerlink&quot; title=&quot;제약 레이아웃(ConstraintLayout)&quot;&gt;&lt;/a&gt;&lt;strong&gt;제약 레이
         
       
       </description>
@@ -318,21 +336,6 @@
       
       
       <comments>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] x만큼 간격이 있는 n개의 숫자</title>
-      <link>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/</link>
-      <guid>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/</guid>
-      <pubDate>Thu, 06 Feb 2020 17:40:42 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;문제 자체는 쉬웠지만 자칫 그냥 써버릴 수 있는 int 타입이 입력 변수 범위가 제한조건에 걸려 테스트케이스에서 실패를 했었던 문제다. &lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/02/07/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-x%EB%A7%8C%ED%81%BC-%EA%B0%84%EA%B2%A9%EC%9D%B4-%EC%9E%88%EB%8A%94-n%EA%B0%9C%EC%9D%98-%EC%88%AB%EC%9E%90/#disqus_thread</comments>
     </item>
     
   </channel>
