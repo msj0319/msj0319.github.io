@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Fri, 19 Feb 2021 07:56:00 GMT</pubDate>
+    <pubDate>Sat, 20 Feb 2021 04:49:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Elastic] GCP VM 환경세팅</title>
+      <link>https://msj0319.github.io/2021/02/20/Elasticsearch-GCP-VM-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85/</link>
+      <guid>https://msj0319.github.io/2021/02/20/Elasticsearch-GCP-VM-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85/</guid>
+      <pubDate>Sat, 20 Feb 2021 04:16:52 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;Google-Cloud-Platform-VM-환경-세팅&quot;&gt;&lt;a href=&quot;#Google-Cloud-Platform-VM-환경-세팅&quot; class=&quot;headerlink&quot; title=&quot;Google Cloud Platform VM 환경 세팅&quot;&gt;
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2021/02/20/Elasticsearch-GCP-VM-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 대표적인 레이아웃</title>
@@ -321,21 +339,6 @@
       
       
       <comments>https://msj0319.github.io/2020/02/14/Hexo-Blog-%EA%B5%AC%EA%B8%80-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%93%B1%EB%A1%9D-%EB%B0%8F-%EA%B2%80%EC%83%89%EC%97%94%EC%A7%84-%EC%B5%9C%EC%A0%81%ED%99%94-SEO/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[BOJ] 10828번 - 스택</title>
-      <link>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/</link>
-      <guid>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/</guid>
-      <pubDate>Tue, 11 Feb 2020 16:26:09 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;학부생 때 배웠던 &lt;code&gt;스택&lt;/code&gt; 자료구조 이론을 토대로 스택 배열 생성, &lt;code&gt;push&lt;/code&gt; , &lt;code&gt;pop&lt;/code&gt; 연산 등을 구현해보는 문제였다.&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/02/12/BOJ-10828%EB%B2%88-%EC%8A%A4%ED%83%9D/#disqus_thread</comments>
     </item>
     
   </channel>
