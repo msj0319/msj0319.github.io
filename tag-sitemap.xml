@@ -3,15 +3,29 @@
 
 
     <url>
+        <loc>https://msj0319.github.io/tags/Google-Cloud-Platform/</loc>
+        <lastmod>2021-02-22T10:25:40.886Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/tags/GCP/</loc>
+        <lastmod>2021-02-22T10:25:40.886Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/tags/Elasticsearch/</loc>
-        <lastmod>2021-02-22T10:25:01.452Z</lastmod>
+        <lastmod>2021-02-22T10:25:40.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://msj0319.github.io/tags/Elastic/</loc>
-        <lastmod>2021-02-22T10:25:01.452Z</lastmod>
+        <lastmod>2021-02-22T10:25:40.886Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -75,20 +89,6 @@
     <url>
         <loc>https://msj0319.github.io/tags/%25EC%2595%2588%25EB%2593%259C%25EB%25A1%259C%25EC%259D%25B4%25EB%2593%259C/</loc>
         <lastmod>2021-02-20T05:51:35.520Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/tags/Google-Cloud-Platform/</loc>
-        <lastmod>2021-02-20T04:53:11.521Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/tags/GCP/</loc>
-        <lastmod>2021-02-20T04:53:11.521Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
