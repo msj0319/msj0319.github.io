@@ -9,13 +9,13 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Mon, 22 Feb 2021 00:50:38 GMT</pubDate>
+    <pubDate>Mon, 22 Feb 2021 02:09:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>[Elasticsearch] Elasticsearch Fundamentals 1일차</title>
-      <link>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Fundamentals-1%EC%9D%BC%EC%B0%A8/</link>
-      <guid>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Fundamentals-1%EC%9D%BC%EC%B0%A8/</guid>
+      <title>[Elasticsearch] Elasticsearch Engineer Training 1일차</title>
+      <link>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1%EC%9D%BC%EC%B0%A8/</link>
+      <guid>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1%EC%9D%BC%EC%B0%A8/</guid>
       <pubDate>Mon, 22 Feb 2021 00:29:34 GMT</pubDate>
       <description>
       
@@ -27,7 +27,7 @@
       </description>
       
       
-      <comments>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Fundamentals-1%EC%9D%BC%EC%B0%A8/#disqus_thread</comments>
+      <comments>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1%EC%9D%BC%EC%B0%A8/#disqus_thread</comments>
     </item>
     
     <item>
