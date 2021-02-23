@@ -1,49 +1,264 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>[Elasticsearch] Elasticsearch Engineer Training -2 - 문도니의 테크로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="문도니의 테크로그"><meta name="msapplication-TileImage" content="/images/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="문도니의 테크로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="개발 메모장"><meta property="og:type" content="blog"><meta property="og:title" content="문도니의 테크로그"><meta property="og:url" content="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"><meta property="og:site_name" content="문도니의 테크로그"><meta property="og:description" content="개발 메모장"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/images/og_image.png"><meta property="article:published_time" content="2021-02-23T00:00:27.000Z"><meta property="article:modified_time" content="2021-02-23T01:34:35.382Z"><meta property="article:author" content="Moondoni"><meta property="article:tag" content="Elastic"><meta property="article:tag" content="Elasticsearch"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="images/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"},"headline":"문도니의 테크로그","image":[],"datePublished":"2021-02-23T00:00:27.000Z","dateModified":"2021-02-23T01:34:35.382Z","author":{"@type":"Person","name":"MoonDoni"},"description":"본 포스트는 상명대학교 Elasticsearch 엔지니어 트레이닝 과정을 이수하고 작성한 글입니다. 개인이 간단하게 실습을 위해 작성한 포스트이며 Enterprise 급 운용을 위한 글이 아님을 밝힙니다."}</script><link rel="canonical" href="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"><link rel="alternate" href="/rss2.xml" title="문도니의 테크로그" type="application/atom+xml"><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-158592978-1" async></script><script>window.dataLayer = window.dataLayer || [];
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>[Elasticsearch] Elasticsearch Engineer Training -2 - 문도니의 테크로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="문도니의 테크로그"><meta name="msapplication-TileImage" content="/images/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="문도니의 테크로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="개발 메모장"><meta property="og:type" content="blog"><meta property="og:title" content="문도니의 테크로그"><meta property="og:url" content="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"><meta property="og:site_name" content="문도니의 테크로그"><meta property="og:description" content="개발 메모장"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/images/og_image.png"><meta property="article:published_time" content="2021-02-23T00:00:27.000Z"><meta property="article:modified_time" content="2021-02-23T17:29:26.555Z"><meta property="article:author" content="Moondoni"><meta property="article:tag" content="Elastic"><meta property="article:tag" content="Elasticsearch"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="images/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"},"headline":"문도니의 테크로그","image":[],"datePublished":"2021-02-23T00:00:27.000Z","dateModified":"2021-02-23T17:29:26.555Z","author":{"@type":"Person","name":"MoonDoni"},"description":"본 포스트는 상명대학교 Elasticsearch 엔지니어 트레이닝 과정을 이수하고 작성한 글입니다. 개인이 간단하게 실습을 위해 작성한 포스트이며 Enterprise 급 운용을 위한 글이 아님을 밝힙니다."}</script><link rel="canonical" href="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/"><link rel="alternate" href="/rss2.xml" title="문도니의 테크로그" type="application/atom+xml"><link rel="icon" href="/images/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-158592978-1" async></script><script>window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
-        gtag('config', 'UA-158592978-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><script data-ad-client="pub-8881479579206785" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><meta name="generator" content="Hexo 5.0.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo.png" alt="문도니의 테크로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-02-23T00:00:27.000Z" title="2021-02-23T00:00:27.000Z">2021-02-23</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2021-02-23T01:34:35.382Z" title="2021-02-23T01:34:35.382Z">2021-02-23</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Elastic/">Elastic</a></span><span class="level-item">1분안에 읽기 (약 220 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">[Elasticsearch] Elasticsearch Engineer Training -2</h1><div class="content"><ul>
+        gtag('config', 'UA-158592978-1');</script><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><script data-ad-client="pub-8881479579206785" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><meta name="generator" content="Hexo 5.0.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo.png" alt="문도니의 테크로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-02-23T00:00:27.000Z" title="2021-02-23T00:00:27.000Z">2021-02-23</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2021-02-23T17:29:26.555Z" title="2021-02-23T17:29:26.555Z">2021-02-24</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Elastic/">Elastic</a></span><span class="level-item">20분안에 읽기 (약 2963 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">[Elasticsearch] Elasticsearch Engineer Training -2</h1><div class="content"><ul>
 <li>본 포스트는 상명대학교 <code>Elasticsearch 엔지니어 트레이닝</code> 과정을 이수하고 작성한 글입니다.<br></li>
 <li>개인이 간단하게 실습을 위해 작성한 포스트이며 <code>Enterprise 급 운용을 위한 글이 아님</code>을 밝힙니다.</li>
 </ul>
 <a id="more"></a>
-
-<ul>
-<li>kibana는 elasticsearch의 하나의 클라이언트</li>
+<h1 id="복습"><a href="#복습" class="headerlink" title="복습"></a>복습</h1><ul>
+<li>Elasticsearch는 텍스트, 숫자, 위치 기반 정보, 정형 및 비정형 데이터 등 모든 유형의 데이터를 위한 무료 검색 및 분석 엔진으로 분산형 및 개방형을 특징으로 한다.</li>
+<li>Elasticsearch는 <code>Apache Lucnene</code>을 기반으로 구축 되었으며 2010년에 현 Elastic으로 출시되었다.</li>
 </ul>
-<h2 id="Logstash에-데이터-주입-실습"><a href="#Logstash에-데이터-주입-실습" class="headerlink" title="Logstash에 데이터 주입 실습"></a>Logstash에 데이터 주입 실습</h2><ul>
-<li><p>elasticserach.yml 열기</p>
-<ul>
-<li>network.host : [<em>site</em>,_local_] 로 수정</li>
+<h2 id="Elasticsearch의-사용"><a href="#Elasticsearch의-사용" class="headerlink" title="Elasticsearch의 사용"></a>Elasticsearch의 사용</h2><ul>
+<li>애플리케이션 검색</li>
+<li>웹사이트 검색</li>
+<li>엔터프라이즈 검색</li>
+<li>로깅과 로그 분석</li>
+<li>인프라 메트릭과 컨테이너 모니터링</li>
+<li>애플리케이션 성능 모니터링</li>
+<li>위치 기반 정보 데이터 분석 및 시각화</li>
+<li>보안 분석</li>
+<li>비즈니스 분석</li>
 </ul>
-</li>
-<li><p>vim 에디터 열어 가장 아랫줄에 추가</p>
-<ul>
-<li><p>sudo vi /etc/sysctl.conf</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vm.max_map_count&#x3D;262164</span><br><span class="line">vm.swappiness&#x3D;1</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>sudo vi /etc/security/limits.conf</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[user_id] soft memlock unlimited</span><br><span class="line">[user_id] hardmemlock unlimited</span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><p>콘솔 상에 명령어 실행    </p>
-<ul>
-<li>sudo shutdown -r now<ul>
-<li>터미널 전부 종료</li>
-<li>elasticsearch 재 실행</li>
+<h2 id="Elasticsearch의-동작"><a href="#Elasticsearch의-동작" class="headerlink" title="Elasticsearch의 동작"></a>Elasticsearch의 동작</h2><ul>
+<li>로그, 시스템 메트릭, 웹 애플리케이션 등의 소스로부터 원시 데이터가 Elasticsearch로 들어간다.<ul>
+<li>이러한 데이터 수집은 원시 데이터가 Elasticsearch에서 indexing되기 전에 구문 분석, 정규화, 강화 되는 프로세스이다.</li>
+<li>indexing 후 데이터에 대해 사용자는 복잡한 쿼리를 실행하고 집계를 사용하여 복잡한 요약을 검색할 수 있다.</li>
+<li>Kibana에서 데이터를 강력하게 시각화하고 대시보드 공유, <code>Elastic Stack</code>을 관리할 수 있다.</li>
 </ul>
 </li>
-<li>restart an elasticsearch and a kibana</li>
+<li><code>Kibana</code>는 elasticsearch의 <code>클라이언트 역할</code>을 한다.</li>
 </ul>
-</li>
+<h2 id="Kibana의-사용"><a href="#Kibana의-사용" class="headerlink" title="Kibana의 사용"></a>Kibana의 사용</h2><ul>
+<li>Kibana는 Elasticsearch를 위한 시각화 및 관리 도구</li>
+<li>실시간 히스토그램, 선 그래프, 파이 차트, 지도 등을 제공</li>
+<li>사용자가 자신의 데이터를 기반으로 사용자 정의한 동적 인포그래픽을 만들 수 있다. (<code>Canvas</code>)</li>
+<li>위치 기반 정보 데이터 시각화 (<code>Elastic Maps</code>)</li>
 </ul>
 <br>
 
-<h3 id="데이터가-저장된-웹서버-접속하기"><a href="#데이터가-저장된-웹서버-접속하기" class="headerlink" title="데이터가 저장된 웹서버 접속하기"></a>데이터가 저장된 웹서버 접속하기</h3><ul>
-<li>elasticsearch에 암호가 걸려있을 때 IP, ID, Password를 통해 접속</li>
+<h1 id="Elasticsearch의-index-개념"><a href="#Elasticsearch의-index-개념" class="headerlink" title="Elasticsearch의 index 개념"></a>Elasticsearch의 index 개념</h1><ul>
+<li>Elasticsearch index는 <code>서로 관련된 문서들의 모음</code>이다.</li>
+<li>JSON 문서로 데이터를 저장</li>
+<li>각 문서는 일련의 키와 그에 해당하는 값을 서로 연결</li>
+<li>Elasticsearch가 문서 저장, 역 인덱스를 구축하여 거의 실시간으로 문서를 검색할 수 있게 한다.</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -XGET http:&#x2F;&#x2F;외부IP:포트번호 -u elastic:비밀번호</span><br></pre></td></tr></table></figure></div><div class="article-licensing box"><div class="licensing-title"><p>[Elasticsearch] Elasticsearch Engineer Training -2</p><p><a href="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/">https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>MoonDoni</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-02-23</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-02-23</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Elastic/">Elastic</a><a class="link-muted mr-2" rel="tag" href="/tags/Elasticsearch/">Elasticsearch</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=5ff2c9ac0931a20012f59e73&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1%EC%9D%BC%EC%B0%A8/"><span class="level-item">[Elasticsearch] Elasticsearch Engineer Training -1</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+<br>
+
+<h1 id="Day02-Logstash-Beats-실습"><a href="#Day02-Logstash-Beats-실습" class="headerlink" title="Day02_ Logstash, Beats 실습"></a><strong>Day02_ Logstash, Beats 실습</strong></h1><h2 id="환경-세팅"><a href="#환경-세팅" class="headerlink" title="환경 세팅"></a><strong>환경 세팅</strong></h2><ul>
+<li>elasticsearch.yml 열기</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi elasticsearch.yml</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>network.host : [<code>_site_</code>, <code>_local_</code>] 로 수정</p>
+</li>
+<li><p>vim 에디터로 아래 파일을 열어 가장 아랫줄에 두 line 핸들링 (root 권한 필요)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;sysctl.conf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vm.max_map_count&#x3D;262164</span><br><span class="line">vm.swappiness&#x3D;1</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;security&#x2F;limits.conf</span><br><span class="line">&#96;&#96;&#96;    </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>[user_id] soft memlock unlimited<br>[user_id] hardmemlock unlimited</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 콘솔 상에 명령어 실행    </span><br></pre></td></tr></table></figure>
+<p>  sudo shutdown -r now</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    - 터미널 전부 종료</span><br><span class="line">- elasticsearch 및 Kibana 재 실행</span><br><span class="line">* 가공데이터가 저장된 웹서버 접속해놓기 (강사님 개인 웹서버)</span><br><span class="line">- elasticsearch에 암호가 걸려있을 때 IP, ID, Password를 통해 접속하는 명령</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>curl -XGET http://외부IP:포트번호 -u elastic:비밀번호</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">## **Logstash 설치**</span><br></pre></td></tr></table></figure>
+<p>curl -L -O <a target="_blank" rel="external nofollow noopener noreferrer" href="https://artifacts.elastic.co/dow">https://artifacts.elastic.co/dow</a><br>nloads/logstash/logstash-7.11.1-linux-x86_64.tar.gz</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## **Beats 소개**</span><br><span class="line">### Elastic에서 제공하는 Beat 솔루션들</span><br><span class="line">- FileBeat</span><br><span class="line">- PacketBeat</span><br><span class="line">- WinlogBeat</span><br><span class="line">- MetricBeat</span><br><span class="line">- HeartBeat</span><br><span class="line">- AuditBeat</span><br><span class="line">- FunctionBeat</span><br><span class="line">- JournalBeat</span><br><span class="line"></span><br><span class="line">## **FileBeat 설치**</span><br></pre></td></tr></table></figure>
+<p>curl -L -O <a target="_blank" rel="external nofollow noopener noreferrer" href="https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.11.1-linux-x86_64.tar.gz">https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.11.1-linux-x86_64.tar.gz</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### Logstash, FileBeat 압축해제</span><br></pre></td></tr></table></figure>
+<p>tar -xzvf logstash-7.11.1-linux-x86_64.tar.gz<br>tar -xzvf filebeat-7.11.1-linux-x86_64.tar.gz</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 다운로드 받았던 설치파일 관리</span><br></pre></td></tr></table></figure>
+<p>mv *.gz ./stack</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### 디렉토리 이름 변경</span><br></pre></td></tr></table></figure>
+<p>mv logstash-7.11.1/ ls-711<br>mv filebeat-7.11.1-linux-x86_64/ fb-711</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## **Logstash의 특징**</span><br><span class="line">- **logstash는 3가지 섹터로 이루어진다 : &#96;Pipeline&#96;**</span><br><span class="line">- 입력 및 출력은 별도의 필터를 사용하지 않고도 파이프라인에 들어가거나 나올 때 데이터를 인코딩하거나 디코딩 할 수 있는 &#96;코덱&#96;을 지원한다.</span><br><span class="line">    - **Input 섹션에서 데이터를 받아들인다.**</span><br><span class="line">        - **데이터를 받아들여 이벤트를 생성**</span><br><span class="line">        - stdin : 표준 입력</span><br><span class="line">        - file(DB, csv)</span><br><span class="line">        - beats : beats에서 보낸 이벤트 처리</span><br><span class="line">        - etc</span><br><span class="line"></span><br><span class="line">    - **Filter 섹션에서 데이터 연산**</span><br><span class="line">        - **입력 섹션에서 들어온 이벤트를 수정**</span><br><span class="line">        - EOF가 될 때까지 데이터를 읽음</span><br><span class="line">        - 중간에 프로세스가 종료될 수 있기 때문에 offset으로 읽었던 지점 저장</span><br><span class="line">        - 읽어들이는 event들은 각각 6개의 파티션으로 구분됨</span><br><span class="line">            - 각 파티션은 commma seperated되어 구분됨</span><br><span class="line">            - JSON 파일 형태로 객체화하여 elasticsearch로 던져준다.</span><br><span class="line">                - JSON 파일도 용도에 따라 자료구조가 다르다 (검색 용도, 분석 용도)</span><br><span class="line"></span><br><span class="line">        - **필터 플러그인**</span><br><span class="line">          - &#96;mutate&#96; : 이벤트 필드에 대한 일반적인 변화 수행</span><br><span class="line">        - </span><br><span class="line"></span><br><span class="line">    - **Output 섹션으로 출력**</span><br><span class="line">        - 정제된 이벤트 데이터가 들어가는 섹션</span><br><span class="line">        - 출력 타겟은 multi로 들어갈 수 있음</span><br><span class="line">        - 이벤트 데이터들을 표준 출력(stdout)과 elasticsearch 등으로 보내기가 가능</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- 사용자 IP의 송신, 수신 데이터를 받아들일 수 있는 모듈 파일</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;&#x2F;br&gt;</span><br><span class="line"></span><br><span class="line"># Logstash 이벤트 처리 파이프라인으로 이벤트 데이터를 받아 Elasticsearch에 출력하기</span><br><span class="line">## **표준 입력으로 데이터 받기 실습**</span><br><span class="line">1. Logstash 폴더 안에 사용자 정의 파이프라인 configuration을 담기위해 만들고 싶은 디렉토리를 만든다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>mkdir 디렉토리 명</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. 사용자 정의 파이프라인 configuration 파일을 만들어 vim 에디터로 아래 코드 작성을 한다.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>vi 파일명.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">![](https:&#x2F;&#x2F;user-images.githubusercontent.com&#x2F;40822689&#x2F;108797350-597cdc80-75ce-11eb-916f-5698a2f67b2d.png)</span><br><span class="line"></span><br><span class="line">- 아직 Filter 섹션은 정의하지 않은 상태</span><br><span class="line">  - 필터 섹션은 선택 사항이다.</span><br><span class="line">- input, output 방식 설정 후 host의 elasticsearch로 데이터 전송하고자 함</span><br><span class="line">    - 입력은 콘솔에 입력하는 표준입력 방식을 사용</span><br><span class="line">- 다 작성했다면 logstash 폴더로 이동</span><br><span class="line"></span><br><span class="line">- **파이프라인 동작**</span><br></pre></td></tr></table></figure>
+<p>./bin/logstash -f ./디렉토리명/파일명.conf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">&gt;&gt;&gt; 콘솔에 직접 메시지 입력</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">       &quot;message&quot; &#x3D;&gt; &quot;입력한 내용&quot;,</span><br><span class="line">          &quot;host&quot; &#x3D;&gt; &quot;Host 이름&quot;,</span><br><span class="line">    &quot;@timestamp&quot; &#x3D;&gt; 2021-02-23T02:52:04.037Z,</span><br><span class="line">      &quot;@version&quot; &#x3D;&gt; &quot;1&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p><strong>결과</strong></p>
+<ul>
+<li>위와 같은 형태 (JSON) 형태로 입력한 메시지가 conf파일의 output(<code>hosts</code>, <code>user</code>, <code>password</code>)정보를 가진 elasticsearch에 전송된 것을 볼 수 있었던 실습이었음.</li>
+</ul>
+<br>
+
+<h2 id="File-형태로-이벤트-데이터-파이프라이닝-실습"><a href="#File-형태로-이벤트-데이터-파이프라이닝-실습" class="headerlink" title="File 형태로 이벤트 데이터 파이프라이닝 실습"></a><strong>File 형태로 이벤트 데이터 파이프라이닝 실습</strong></h2><ol start="0">
+<li>강사님의 웹서버에서 blogs.csv 파일을 vm에 다운로드 받았다.</li>
+</ol>
+<ul>
+<li>cat으로 csv 파일을 까본 결과…</li>
+<li>어마어마한 문서 양으로 도중에 멈췄다.</li>
+<li><strong>그런데 중간에 세미콜론으로 의미가 구분되어 있는 것이 보인다.</strong></li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/40822689/108872299-61279a00-763d-11eb-838e-4a8bc9acd940.png" alt></p>
+<ol>
+<li>아까 만든 디렉토리에 또다른 conf 파일을 생성하여 이번엔 새로운 파이프라인을 구축한다.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi 파일명.conf</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>코드 작성<ul>
+<li>오타가 나지 않도록 주의하자</li>
+</ul>
+</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/40822689/108870807-d2fee400-763b-11eb-978e-8f26c58b7f7c.png" alt></p>
+<ol start="3">
+<li><p><strong>코드 분석</strong></p>
+<ul>
+<li><p><strong>input 섹션</strong></p>
+<ul>
+<li><code>file</code> : file로 받겠다는 의미. csv 파일</li>
+<li><code>path</code> : 파일을 읽어올 경로</li>
+<li><code>start_position</code> : Logstash를 시작 할 때 file의 어디서부터 읽을 것인지 결정하는 설정.<ul>
+<li>start_positon 값이 <code>beginning</code>인 경우 <strong>재 시작하더라도 파일의 처음부터 읽겠다고 명시</strong></li>
+</ul>
+</li>
+<li><code>since_db_path</code> <ul>
+<li>logstash에서 최초 실행 이후 재실행 시, 마지막으로 읽은 파일위치를 <code>since_db</code>에 저장된 <code>offset</code>부터 읽기 시작한다. </li>
+<li>따라서 <code>since_db_path</code>는 파일을 마지막으로 읽은 위치를 가져오기 위한 경로를 설정하는 것인데, 위 start_position의 값을 beginning으로 해놓았기 때문에 의미가 없다고 봐야한다. (읽을 때마다 처음부터 다시 읽기 때문에)</li>
+<li>그래서 값인 <code>/dev/null</code>은 경로 없음이나 다름없다고 생각해도 된다.<ul>
+<li>테스트 환경인 경우 since_db 경로 때문에 테스트가 번거롭다고 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>filter 섹션</strong></p>
+<ul>
+<li><p><code>dissect</code> 필터 : 추출할 필드의 시퀀스와 필드 사이의 구분 문자 지정</p>
+<ul>
+<li>이벤트 데이터 전체에 반영된 공통 구조를 그대로 이용하여 원하는 부분을 잘라내는 기능을 한다.</li>
+<li><code>mapping</code> <ul>
+<li><code>message</code> : 이벤트 데이터를 세미콜론 구분자로 형식을 설정하고 나눈 데이터의 이름을 지정한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>date</code> 필터 : 날짜를 구문 분석 후 해당 날짜 또는 타임 스탬프를 이벤트의 logstash 타임 스탬프로 사용하는데 사용</p>
+<ul>
+<li><code>match</code> : value type은 array.<ul>
+<li>dissect 필터에서 가공된 date field를 다음과 같은 format으로 변환</li>
+</ul>
+</li>
+<li><code>target</code> : match에 지정된 형식으로 target된 필드에 타임 스탬프 저장</li>
+<li><code>remove_field</code> : date 필터 기능이 수행되면 이벤트 데이터에서 해당 필드를 제거</li>
+</ul>
+</li>
+<li><p><code>mutate</code> 필터 : 이벤트 데이터에서 필드의 이름에 대한 연산 수행 (수정, 삭제)</p>
+<ul>
+<li><code>remove_field</code> : mutate 필터링이 성공했을 때 해당 필드를 제거 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>output 섹션</strong></p>
+<ul>
+<li><code>stdout</code> : 표준출력, 콘솔에 출력 시 json 형태로 출력한다.</li>
+<li><code>elasticsearch</code> : 사용자의 elasticsearch에 이벤트 데이터 출력<ul>
+<li><code>index</code> : elasticsearch에 전송되어 쿼리될 인덱스 이름 지정</li>
+<li>host, user, password : elasticsearch의 주소와 암호</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>파이프라인 실행</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;bin&#x2F;logstash -f .&#x2F;디렉토리명&#x2F;파일명.conf</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>전송 결과 확인</li>
+</ol>
+<ul>
+<li>elasticsearch client로 접속</li>
+<li>Menu -&gt; Management - Dev Tools</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET blogs&#x2F;_search</span><br></pre></td></tr></table></figure>
+<ul>
+<li>해당 메소드로 쿼리하여 json 포맷 결과 확인</li>
+</ul>
+<h2 id="Elasticsearch-REST-Query"><a href="#Elasticsearch-REST-Query" class="headerlink" title="Elasticsearch REST Query"></a><strong>Elasticsearch REST Query</strong></h2><ul>
+<li><p>위 blogs.csv 파이프라이닝 실습과 이어짐</p>
+</li>
+<li><p>Console에 아래 명령 입력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">GET _cat&#x2F;indices?v&amp;s&#x3D;index:desc &#x2F;&#x2F;인덱스 정보 출력</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;method [index_name]&#x2F;_QUERY 형태</span><br><span class="line">GET [index_name]&#x2F;_count</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;좀 더 정확한 검색</span><br><span class="line">GET [index_name]&#x2F;_search</span><br><span class="line">&#123;</span><br><span class="line">  &quot;query&quot;: &#123;                &#x2F;&#x2F;항상 query 속성이 먼저 오게 됨.</span><br><span class="line">    &quot;match&quot;: &#123;</span><br><span class="line">      &quot;seo_title&quot;: &quot;logstash&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/40822689/108810379-5a256b00-75ee-11eb-87fb-86ef4e208e74.png" alt></p>
+</li>
+<li><p>인덱스 이름이 blog인 데이터 중에서 <code>seo_title</code>에 <code>logstash</code>가 있거나 <code>released</code>라는 단어가 있는 데이터를 찾는 쿼리 (기본적으로 OR Condition)</p>
+</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/40822689/108810522-a83a6e80-75ee-11eb-8780-e566fa401248.png" alt></p>
+<ul>
+<li>hits를 봤을 때 총 113건의 데이터가 나온 것을 볼 수 있다.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">GET blogs&#x2F;_search</span><br><span class="line">&#123;</span><br><span class="line">  &quot;_source&quot;: &quot;title&quot;,</span><br><span class="line">  &quot;size&quot;: 100, </span><br><span class="line">  &quot;query&quot;: &#123;</span><br><span class="line">    &quot;match&quot;: &#123;</span><br><span class="line">      &quot;seo_title&quot;: &#123;</span><br><span class="line">        &quot;query&quot;: &quot;elasticsearch released&quot;,</span><br><span class="line">        &quot;operator&quot;: &quot;and&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>seo_title 필드에 elsasticsearch와 released 단어가 모두 있으며, size가 100인 title을 조회하라 </li>
+</ul>
+<br>
+
+<h1 id="Filebeat-실습"><a href="#Filebeat-실습" class="headerlink" title="Filebeat 실습"></a><strong>Filebeat 실습</strong></h1><ul>
+<li>filebeat의 module 폴더를 확인하면, 여러 product들의 log format을 볼 수 있다.<ul>
+<li>아직 잘 모르겠지만 프로덕트마다 로그 포맷이 달라 엄청난 기능이라고 하셨다.</li>
+</ul>
+</li>
+<li>간단하게 Filebeat에 enable만 하면 사용할 수 있게 되어 있음.</li>
+</ul>
+<h2 id="1-샘플-데이터-다운로드-및-환경-설정"><a href="#1-샘플-데이터-다운로드-및-환경-설정" class="headerlink" title="1. 샘플 데이터 다운로드 및 환경 설정"></a><strong>1. 샘플 데이터 다운로드 및 환경 설정</strong></h2><ul>
+<li><p>따로 설정한 <code>filebeat.yml</code> 파일, <code>로그 데이터 압축 파일</code>을 강사님의 웹서버에서 받아 로컬 환경에 맞게 세팅</p>
+<ul>
+<li><p>홈디렉토리에 sample-data 폴더 생성</p>
+<ul>
+<li>다운받은 로그 샘플 데이터 압축 해제</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/40822689/108882312-9933da80-7647-11eb-9e7c-0825163d65c7.png" alt></p>
+<ul>
+<li>…server1, server2, server3 폴더들</li>
+<li>많은 양의 로그 파일들을 볼 수 있다</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/40822689/108882436-ba94c680-7647-11eb-8831-eda7866472a2.png" alt></p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- `filebeat.inputs`의 `paths` : 로그 샘플 데이터가 있는 디렉토리 경로 설정
+- `output.elasticsearch` : 로그를 뿌려줄 elasticsearch 호스트와 암호 설정
+  - 여기서 index 형태도 설정할 수 있다.
+
+![](https://user-images.githubusercontent.com/40822689/108813339-2f3e1580-75f4-11eb-9bfa-bc79613e8008.png)</code></pre><h2 id="2-Filebeat-Test-Command"><a href="#2-Filebeat-Test-Command" class="headerlink" title="2. Filebeat Test Command"></a><strong>2. Filebeat Test Command</strong></h2><h3 id="filebeat-configuration-구성에-이상이-없는지-테스트"><a href="#filebeat-configuration-구성에-이상이-없는지-테스트" class="headerlink" title="filebeat configuration 구성에 이상이 없는지 테스트"></a>filebeat configuration 구성에 이상이 없는지 테스트</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;filebeat test config</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/40822689/108882073-55d96c00-7647-11eb-9f2b-12f98fc3b3c3.png" alt></p>
+<h3 id="현재-설정을-사용하여-filebeat가-출력에-연결할-수-있는지-테스트"><a href="#현재-설정을-사용하여-filebeat가-출력에-연결할-수-있는지-테스트" class="headerlink" title="현재 설정을 사용하여 filebeat가 출력에 연결할 수 있는지 테스트"></a>현재 설정을 사용하여 filebeat가 출력에 연결할 수 있는지 테스트</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;filebeat test output</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/40822689/108881911-2a568180-7647-11eb-8a80-293f99f81e09.png" alt></p>
+<ul>
+<li>이와 같이 떠야 테스트 완료</li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://www.elastic.co/guide/en/beats/filebeat/current/command-line-options.html">https://www.elastic.co/guide/en/beats/filebeat/current/command-line-options.html</a></li>
+</ul>
+<h2 id="3-업로드"><a href="#3-업로드" class="headerlink" title="3. 업로드"></a><strong>3. 업로드</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;filebeat -e </span><br></pre></td></tr></table></figure>
+
+<h2 id="4-Cilent에서-로그-집계-확인"><a href="#4-Cilent에서-로그-집계-확인" class="headerlink" title="4. Cilent에서 로그 집계 확인"></a><strong>4. Cilent에서 로그 집계 확인</strong></h2><ul>
+<li><p>Menu -&gt; Management - Dev Tools</p>
+</li>
+<li><p>Console 명령 입력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET logs_server*&#x2F;_count</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/40822689/108881384-97b5e280-7646-11eb-935f-f3c074d7d5d0.png" alt></p>
+</li>
+<li><p>총 1752476건의 로그 집계 확인</p>
+</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>[Elasticsearch] Elasticsearch Engineer Training -2</p><p><a href="https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/">https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>MoonDoni</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-02-23</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-02-24</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Elastic/">Elastic</a><a class="link-muted mr-2" rel="tag" href="/tags/Elasticsearch/">Elasticsearch</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=5ff2c9ac0931a20012f59e73&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1%EC%9D%BC%EC%B0%A8/"><span class="level-item">[Elasticsearch] Elasticsearch Engineer Training -1</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
             this.page.url = 'https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/';
             this.page.identifier = '2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/';
         };
