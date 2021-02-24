@@ -8,6 +8,22 @@
     </url>
 
     <url>
+        <loc>https://msj0319.github.io/2021/02/24/Elasticsearch-Elasticsearch-Engineer-Training-3/</loc>
+        <lastmod>2021-02-24T07:49:30.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/</loc>
+        <lastmod>2021-02-24T01:31:15.418Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/2021/02/22/Elasticsearch-Elasticsearch-Engineer-Training-1/</loc>
         <lastmod>2021-02-23T18:17:24.219Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,14 +34,6 @@
     <url>
         <loc>https://msj0319.github.io/2021/02/20/Elasticsearch-GCP-VM-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85/</loc>
         <lastmod>2021-02-23T18:15:58.767Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/2021/02/23/Elasticsearch-Elasticsearch-Engineer-Training-2/</loc>
-        <lastmod>2021-02-23T18:15:40.735Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

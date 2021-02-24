@@ -9,8 +9,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Tue, 23 Feb 2021 18:15:40 GMT</pubDate>
+    <pubDate>Wed, 24 Feb 2021 07:49:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[Elasticsearch] Elasticsearch Engineer Training -3</title>
+      <link>https://msj0319.github.io/2021/02/24/Elasticsearch-Elasticsearch-Engineer-Training-3/</link>
+      <guid>https://msj0319.github.io/2021/02/24/Elasticsearch-Elasticsearch-Engineer-Training-3/</guid>
+      <pubDate>Wed, 24 Feb 2021 00:03:05 GMT</pubDate>
+      <description>
+      
+        &lt;ul&gt;
+&lt;li&gt;본 포스트는 상명대학교 &lt;code&gt;Elasticsearch 엔지니어 트레이닝&lt;/code&gt; 과정을 이수하고 작성한 글입니다.&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;개인이 간단하게 실습을 위해 작성한 포스트이며 &lt;code&gt;Enterprise 급 운용을 위한 글이 아님&lt;/code&gt;을 밝힙니다.
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2021/02/24/Elasticsearch-Elasticsearch-Engineer-Training-3/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[Elasticsearch] Elasticsearch Engineer Training -2</title>
@@ -330,21 +347,6 @@
       
       
       <comments>https://msj0319.github.io/2020/02/25/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%8B%9C%EC%A0%80-%EC%95%94%ED%98%B8/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[프로그래머스] 수박수박수박수박수박수?</title>
-      <link>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/</link>
-      <guid>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/</guid>
-      <pubDate>Mon, 24 Feb 2020 11:49:53 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;입력 n이 1일 땐 “수” 출력, n이 2이면 “수박”, 3이면 “수박수” … index 초기값을 1로 초기화 하고 반복문을 통해 i가 증가 할때마다 홀수, 짝수 판별을 한다. 만약 홀수면 “수”, 짝수면 “박”을 answer 에 추가해가면서 n번 반복한다.&lt;/p&gt;
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/02/24/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98%EB%B0%95%EC%88%98/#disqus_thread</comments>
     </item>
     
   </channel>
