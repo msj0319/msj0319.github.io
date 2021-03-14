@@ -9,8 +9,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Sun, 14 Mar 2021 17:05:58 GMT</pubDate>
+    <pubDate>Sun, 14 Mar 2021 17:47:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[안드로이드] 기본 위젯들</title>
+      <link>https://msj0319.github.io/2021/03/15/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EA%B8%B0%EB%B3%B8-%EC%9C%84%EC%A0%AF%EB%93%A4/</link>
+      <guid>https://msj0319.github.io/2021/03/15/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EA%B8%B0%EB%B3%B8-%EC%9C%84%EC%A0%AF%EB%93%A4/</guid>
+      <pubDate>Sun, 14 Mar 2021 17:38:51 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h1 id=&quot;안드로이드-기본-위젯&quot;&gt;&lt;a href=&quot;#안드로이드-기본-위젯&quot; class=&quot;headerlink&quot; title=&quot;안드로이드 기본 위젯&quot;&gt;&lt;/a&gt;&lt;strong&gt;안드로이드 기본 위젯&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;텍스트-뷰-TextVi
+        
+      
+      </description>
+      
+      
+      <comments>https://msj0319.github.io/2021/03/15/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EA%B8%B0%EB%B3%B8-%EC%9C%84%EC%A0%AF%EB%93%A4/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[안드로이드] 프레임 레이아웃과 뷰의 전환</title>
@@ -316,25 +334,6 @@
       
       
       <comments>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-SHA-1-SHA-256-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%A7%80%EB%AC%B8-%EC%B0%BE%EA%B8%B0/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[안드로이드] 앱 인터넷 권한 설정</title>
-      <link>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/</link>
-      <guid>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/</guid>
-      <pubDate>Sun, 08 Mar 2020 12:20:37 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;Android.xml의 &lt;code&gt;&amp;lt;manifest&amp;gt;&lt;/code&gt; 태그 내부에 해당 구문 추가.&lt;/p&gt;
-&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cl
-        
-      
-      </description>
-      
-      
-      <comments>https://msj0319.github.io/2020/03/08/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1-%EC%9D%B8%ED%84%B0%EB%84%B7-%EA%B6%8C%ED%95%9C-%EC%84%A4%EC%A0%95/#disqus_thread</comments>
     </item>
     
   </channel>
