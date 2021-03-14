@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>개발 메모장</description>
-    <pubDate>Sun, 14 Mar 2021 15:17:06 GMT</pubDate>
+    <pubDate>Sun, 14 Mar 2021 16:55:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,7 +22,8 @@
         
         
           &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;프레임-레이아웃과-뷰의-전환&quot;&gt;&lt;a href=&quot;#프레임-레이아웃과-뷰의-전환&quot; class=&quot;headerlink&quot; title=&quot;프레임 레이아웃과 뷰의 전환&quot;&gt;&lt;/a&gt;&lt;strong&gt;프레임 레이아웃과 뷰의 전환
+
+&lt;h1 id=&quot;프레임-레이아웃과-뷰의-전환&quot;&gt;&lt;a href=&quot;#프레임-레이아웃과-뷰의-전환&quot; class=&quot;headerlink&quot; title=&quot;프레임 레이아웃과 뷰의 전환&quot;&gt;&lt;/a&gt;&lt;strong&gt;프레임 레이아웃과 뷰의 전
         
       
       </description>
@@ -129,7 +130,8 @@
         
         
           &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;대표적인-레이아웃&quot;&gt;&lt;a href=&quot;#대표적인-레이아웃&quot; class=&quot;headerlink&quot; title=&quot;대표적인 레이아웃&quot;&gt;&lt;/a&gt;&lt;strong&gt;대표적인 레이아웃&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;리니
+
+&lt;h1 id=&quot;대표적인-레이아웃&quot;&gt;&lt;a href=&quot;#대표적인-레이아웃&quot; class=&quot;headerlink&quot; title=&quot;대표적인 레이아웃&quot;&gt;&lt;/a&gt;&lt;strong&gt;대표적인 레이아웃&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;리
         
       
       </description>
@@ -148,7 +150,8 @@
         
         
           &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;제약-레이아웃-ConstraintLayout&quot;&gt;&lt;a href=&quot;#제약-레이아웃-ConstraintLayout&quot; class=&quot;headerlink&quot; title=&quot;제약 레이아웃(ConstraintLayout)&quot;
+
+&lt;h1 id=&quot;제약-레이아웃-ConstraintLayout&quot;&gt;&lt;a href=&quot;#제약-레이아웃-ConstraintLayout&quot; class=&quot;headerlink&quot; title=&quot;제약 레이아웃(ConstraintLayout)
         
       
       </description>
@@ -167,8 +170,9 @@
         
         
           &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
 &lt;h1 id=&quot;뷰-View&quot;&gt;&lt;a href=&quot;#뷰-View&quot; class=&quot;headerlink&quot; title=&quot;뷰 (View)&quot;&gt;&lt;/a&gt;&lt;strong&gt;뷰 (View)&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;뷰는 안드로이드 
+&lt;li&gt;뷰는 안드로이드
         
       
       </description>
