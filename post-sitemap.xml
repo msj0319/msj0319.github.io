@@ -8,8 +8,16 @@
     </url>
 
     <url>
+        <loc>https://msj0319.github.io/2021/07/11/Kotlin-1%EC%9E%A5-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/</loc>
+        <lastmod>2021-07-10T17:45:28.941Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://msj0319.github.io/2021/07/11/Kotlin-2%EC%9E%A5-%EB%B3%80%EC%88%98%EC%99%80-%EC%9E%90%EB%A3%8C%ED%98%95-%EC%97%B0%EC%82%B0%EC%9E%90/</loc>
-        <lastmod>2021-07-10T17:40:02.698Z</lastmod>
+        <lastmod>2021-07-10T17:45:10.005Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -18,14 +26,6 @@
     <url>
         <loc>https://msj0319.github.io/2021/02/25/Elasticsearch-Elasticsearch-Engineer-Training-4/</loc>
         <lastmod>2021-07-10T17:19:53.533Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://msj0319.github.io/2021/07/11/Kotlin-1%EC%9E%A5-%EC%BD%94%ED%8B%80%EB%A6%B0%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/</loc>
-        <lastmod>2021-07-10T17:00:39.694Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
